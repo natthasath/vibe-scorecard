@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Position Score Card System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Job Position Score Card System</h1>
+            <p>Professional Career Assessment & Responsibility Matrix</p>
+        </div>
+
+        <!-- Position Selector -->
+        <div class="position-selector-section">
+            <div class="position-controls">
+                <div class="position-dropdown">
+                    <label for="positionSelect">เลือกตำแหน่งงาน:</label>
+                    <select id="positionSelect" class="position-select">
+                        <option value="">กรุณาเลือกตำแหน่ง...</option>
+                    </select>
+                </div>
+                <div class="position-actions">
+                    <button id="compareBtn" class="action-btn compare-btn" title="เปรียบเทียบตำแหน่ง">
+                        📊 เปรียบเทียบ
+                    </button>
+                    <button id="exportBtn" class="action-btn export-btn" title="Export ข้อมูล">
+                        📤 Export
+                    </button>
+                    <button id="settingsBtn" class="action-btn settings-btn" title="ตั้งค่า">
+                        ⚙️ ตั้งค่า
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Loading Indicator -->
+        <div id="loadingIndicator" class="loading-indicator">
+            <div class="spinner"></div>
+            <p>กำลังโหลดข้อมูล...</p>
+        </div>
+
+        <!-- No Position Selected -->
+        <div id="noPositionSelected" class="no-position-selected">
+            <div class="empty-state">
+                <h2>🎯 ยินดีต้อนรับสู่ระบบประเมินตำแหน่งงาน</h2>
+                <p>กรุณาเลือกตำแหน่งงานจากเมนูด้านบนเพื่อดูรายละเอียด Score Card</p>
+                <div class="quick-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" id="totalPositions">0</span>
+                        <span class="stat-label">ตำแหน่งงาน</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="totalCategories">0</span>
+                        <span class="stat-label">หมวดงาน</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="totalAllTasks">0</span>
+                        <span class="stat-label">งานทั้งหมด</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div id="mainContent" class="content" style="display: none;">
+            <!-- Position Info Header -->
+            <div class="position-info-header">
+                <div class="position-title">
+                    <h2 id="currentPositionTitle">-</h2>
+                    <p id="currentPositionDescription">-</p>
+                </div>
+                <div class="position-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">หมวดงาน:</span>
+                        <span class="meta-value" id="positionCategories">-</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">งานทั้งหมด:</span>
+                        <span class="meta-value" id="positionTotalTasks">-</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">ระดับความยาก:</span>
+                        <span class="meta-value" id="positionAvgDifficulty">-</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>หน้าที่ความรับผิดชอบหลัก</h2>
+                <div id="responsibilitiesContainer" class="responsibilities">
+                    <!-- Dynamic responsibilities will be loaded here -->
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>สถิติภาพรวม</h2>
+                <div class="stats">
+                    <div class="stat-card">
+                        <h3 id="totalTasks">0</h3>
+                        <p>งานทั้งหมด</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 id="avgDifficulty">0.0</h3>
+                        <p>ค่าเฉลี่ยความยาก</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 id="dailyTasks">0</h3>
+                        <p>งานรายวัน</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 id="criticalTasks">0</h3>
+                        <p>งานสำคัญ (ระดับ 5)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Score Card ตารางประเมินงาน</h2>
+                
+                <div class="controls">
+                    <div class="filter-group">
+                        <label>ค้นหา:</label>
+                        <input type="text" id="searchBox" class="search-box" placeholder="ค้นหางาน...">
+                    </div>
+                    <div class="filter-group">
+                        <label>หมวด:</label>
+                        <select id="categoryFilter">
+                            <option value="">ทั้งหมด</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>ความยาก:</label>
+                        <select id="difficultyFilter">
+                            <option value="">ทั้งหมด</option>
+                            <option value="1">1 - ง่าย</option>
+                            <option value="2">2 - ง่าย-ปานกลาง</option>
+                            <option value="3">3 - ปานกลาง</option>
+                            <option value="4">4 - ยาก</option>
+                            <option value="5">5 - ยากมาก</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>ความถี่:</label>
+                        <select id="frequencyFilter">
+                            <option value="">ทั้งหมด</option>
+                            <option value="รายวัน">รายวัน</option>
+                            <option value="รายสัปดาห์">รายสัปดาห์</option>
+                            <option value="รายเดือน">รายเดือน</option>
+                            <option value="รายปี">รายปี</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <button id="clearFilters" class="clear-btn">🔄 Clear</button>
+                    </div>
+                </div>
+
+                <div class="table-container">
+                    <table class="scorecard-table">
+                        <thead>
+                            <tr>
+                                <th>หมวด</th>
+                                <th>งาน</th>
+                                <th>ความยาก (1-5)</th>
+                                <th>ความถี่</th>
+                                <th>หมายเหตุ</th>
+                            </tr>
+                        </thead>
+                        <tbody id="scorecardTableBody">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Compare Modal -->
+        <div id="compareModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>📊 เปรียบเทียบตำแหน่งงาน</h2>
+                    <span class="close" id="closeCompareModal">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="compare-selector">
+                        <div class="compare-item">
+                            <label>ตำแหน่งที่ 1:</label>
+                            <select id="comparePosition1">
+                                <option value="">เลือกตำแหน่ง...</option>
+                            </select>
+                        </div>
+                        <div class="compare-item">
+                            <label>ตำแหน่งที่ 2:</label>
+                            <select id="comparePosition2">
+                                <option value="">เลือกตำแหน่ง...</option>
+                            </select>
+                        </div>
+                        <button id="runComparison" class="action-btn">เปรียบเทียบ</button>
+                    </div>
+                    <div id="comparisonResults" class="comparison-results">
+                        <!-- Comparison results will appear here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Settings Modal -->
+        <div id="settingsModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>⚙️ ตั้งค่าระบบ</h2>
+                    <span class="close" id="closeSettingsModal">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="settings-section">
+                        <h3>📁 จัดการข้อมูล</h3>
+                        <div class="settings-item">
+                            <label for="jsonFileInput">Import ไฟล์ JSON:</label>
+                            <input type="file" id="jsonFileInput" accept=".json" class="file-input">
+                            <button id="importBtn" class="action-btn">Import</button>
+                        </div>
+                        <div class="settings-item">
+                            <button id="downloadJsonBtn" class="action-btn">📥 Download Current JSON</button>
+                        </div>
+                    </div>
+                    <div class="settings-section">
+                        <h3>🎨 การแสดงผล</h3>
+                        <div class="settings-item">
+                            <label>
+                                <input type="checkbox" id="darkModeToggle"> โหมดมืด (Dark Mode)
+                            </label>
+                        </div>
+                        <div class="settings-item">
+                            <label>
+                                <input type="checkbox" id="autoRefreshToggle" checked> รีเฟรชอัตโนมัติ
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
