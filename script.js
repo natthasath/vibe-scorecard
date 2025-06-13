@@ -5,8 +5,13 @@ let filteredData = [];
 
 // JSON files to load (update this array when adding new position files)
 const JSON_FILES = [
-    'positions/oracle-dba.json',
-    'positions/linux-administrator.json'
+    'positions/linux-administrator.json',
+    'positions/network-administrator.json',
+    'positions/system-administrator.json',
+    'positions/project-manager.json',
+    'positions/website-administrator.json',
+    'positions/fullstack-developer.json',
+    'positions/database-administrator.json'
 ];
 
 // DOM Elements

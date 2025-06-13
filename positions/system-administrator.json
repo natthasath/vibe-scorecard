@@ -1,0 +1,491 @@
+{
+  "position": "System Administrator",
+  "overview": "Professional responsible for managing, maintaining, and supporting IT infrastructure including servers, operating systems, applications, and end-user computing environments",
+  "department": "IT Operations",
+  "level": "Mid-Senior",
+  "requiredSkills": ["Windows Server", "Linux", "VMware", "PowerShell", "Active Directory", "Cloud Computing"],
+  "categories": [
+    {
+      "name": "Server Management & Virtualization",
+      "description": "Manage physical and virtual server infrastructure",
+      "icon": "🖥️",
+      "responsibilities": [
+        "ติดตั้งและกำหนดค่า Physical Servers",
+        "จัดการ Virtual Machine Infrastructure (VMware, Hyper-V)",
+        "กำหนดค่า Server Hardware และ RAID Systems",
+        "จัดการ Server Resource Allocation",
+        "ติดตั้งและกำหนดค่า Hypervisor",
+        "ทำ VM Migration และ P2V/V2V Conversion"
+      ]
+    },
+    {
+      "name": "Operating System Administration",
+      "description": "Administer Windows and Linux operating systems",
+      "icon": "💻",
+      "responsibilities": [
+        "จัดการ Windows Server (2016/2019/2022)",
+        "จัดการ Linux Distributions (RHEL, Ubuntu, CentOS)",
+        "กำหนดค่า Group Policy และ Registry",
+        "จัดการ Windows Update และ WSUS",
+        "กำหนดค่า System Services และ Processes",
+        "ทำ OS Hardening และ Security Configuration"
+      ]
+    },
+    {
+      "name": "Directory Services & Identity Management",
+      "description": "Manage Active Directory and identity services",
+      "icon": "👥",
+      "responsibilities": [
+        "จัดการ Active Directory Domain Services",
+        "กำหนดค่า DNS และ DHCP Services",
+        "จัดการ User Accounts และ Security Groups",
+        "กำหนดค่า Group Policy Objects (GPO)",
+        "จัดการ LDAP และ Directory Synchronization",
+        "ติดตั้งและจัดการ Certificate Services (PKI)"
+      ]
+    },
+    {
+      "name": "Application & Service Management",
+      "description": "Deploy and manage applications and services",
+      "icon": "⚙️",
+      "responsibilities": [
+        "ติดตั้งและกำหนดค่า Enterprise Applications",
+        "จัดการ IIS Web Services",
+        "กำหนดค่า SQL Server และ Database Services",
+        "จัดการ File Servers และ Print Services",
+        "ติดตั้งและกำหนดค่า Email Systems (Exchange)",
+        "จัดการ Application Licensing และ Compliance"
+      ]
+    },
+    {
+      "name": "Backup & Recovery",
+      "description": "Implement and manage backup and disaster recovery solutions",
+      "icon": "💾",
+      "responsibilities": [
+        "วางแผนและดำเนินการ Enterprise Backup Strategy",
+        "ติดตั้งและกำหนดค่า Backup Software (Veeam, Commvault)",
+        "จัดการ Tape Libraries และ Disk-to-Disk Backup",
+        "ทดสอบ Backup Integrity และ Recovery Procedures",
+        "สร้าง Disaster Recovery Plans",
+        "ทำ Business Continuity Planning"
+      ]
+    },
+    {
+      "name": "System Monitoring & Performance",
+      "description": "Monitor system health and optimize performance",
+      "icon": "📊",
+      "responsibilities": [
+        "ติดตั้งและกำหนดค่า System Monitoring Tools",
+        "ติดตาม Server Performance และ Resource Usage",
+        "วิเคราะห์ System Logs และ Event Monitoring",
+        "ทำ Capacity Planning และ Resource Optimization",
+        "สร้าง Performance Reports และ SLA Monitoring",
+        "จัดการ Alert Systems และ Escalation Procedures"
+      ]
+    },
+    {
+      "name": "Security & Compliance",
+      "description": "Implement security measures and ensure compliance",
+      "icon": "🔒",
+      "responsibilities": [
+        "ติดตั้งและจัดการ Antivirus และ Endpoint Security",
+        "กำหนดค่า Windows Firewall และ Security Policies",
+        "ทำ Security Patch Management",
+        "จัดการ Access Control และ Permission Management",
+        "ทำ Security Auditing และ Compliance Reporting",
+        "ติดตั้งและกำหนดค่า SIEM Solutions"
+      ]
+    },
+    {
+      "name": "Cloud Services Management",
+      "description": "Manage cloud infrastructure and hybrid environments",
+      "icon": "☁️",
+      "responsibilities": [
+        "จัดการ Microsoft Azure และ Office 365",
+        "กำหนดค่า AWS/Azure Virtual Machines",
+        "จัดการ Cloud Storage และ Backup Services",
+        "ติดตั้งและกำหนดค่า Hybrid Cloud Connectivity",
+        "จัดการ Cloud Identity และ Single Sign-On",
+        "ทำ Cloud Cost Optimization"
+      ]
+    },
+    {
+      "name": "Automation & Scripting",
+      "description": "Develop automation solutions and scripts",
+      "icon": "🤖",
+      "responsibilities": [
+        "เขียน PowerShell Scripts สำหรับ Windows Automation",
+        "สร้าง Bash Scripts สำหรับ Linux Tasks",
+        "ใช้งาน Configuration Management Tools",
+        "พัฒนา Deployment Scripts และ Automation",
+        "สร้าง Monitoring และ Reporting Scripts",
+        "ติดตั้งและใช้งาน Orchestration Tools"
+      ]
+    },
+    {
+      "name": "User Support & Training",
+      "description": "Provide technical support and user training",
+      "icon": "🎓",
+      "responsibilities": [
+        "สนับสนุน End Users และ Technical Issues",
+        "สร้าง Technical Documentation และ Procedures",
+        "ทำ User Training และ Knowledge Transfer",
+        "จัดการ Help Desk และ Ticketing Systems",
+        "ให้คำปรึกษา Technical Solutions",
+        "ทำ IT Asset Management"
+      ]
+    }
+  ],
+  "scorecard": [
+    {
+      "category": "Server Management & Virtualization",
+      "task": "ติดตั้ง Physical Servers",
+      "difficulty": 3,
+      "frequency": "รายเดือน",
+      "note": "Hardware Installation"
+    },
+    {
+      "category": "Server Management & Virtualization",
+      "task": "จัดการ VMware Infrastructure",
+      "difficulty": 4,
+      "frequency": "รายวัน",
+      "note": "vSphere/ESXi Management"
+    },
+    {
+      "category": "Server Management & Virtualization",
+      "task": "กำหนดค่า RAID Systems",
+      "difficulty": 3,
+      "frequency": "รายเดือน",
+      "note": "Storage Configuration"
+    },
+    {
+      "category": "Server Management & Virtualization",
+      "task": "ทำ VM Migration",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "vMotion/Live Migration"
+    },
+    {
+      "category": "Server Management & Virtualization",
+      "task": "จัดการ VM Resource Allocation",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "CPU/Memory/Storage"
+    },
+    {
+      "category": "Operating System Administration",
+      "task": "จัดการ Windows Server",
+      "difficulty": 3,
+      "frequency": "รายวัน",
+      "note": "2016/2019/2022"
+    },
+    {
+      "category": "Operating System Administration",
+      "task": "จัดการ Linux Systems",
+      "difficulty": 3,
+      "frequency": "รายวัน",
+      "note": "RHEL/Ubuntu/CentOS"
+    },
+    {
+      "category": "Operating System Administration",
+      "task": "กำหนดค่า Group Policy",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "Windows Domain Policies"
+    },
+    {
+      "category": "Operating System Administration",
+      "task": "จัดการ Windows Update",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "WSUS/SCCM"
+    },
+    {
+      "category": "Operating System Administration",
+      "task": "ทำ OS Hardening",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Security Configuration"
+    },
+    {
+      "category": "Directory Services & Identity Management",
+      "task": "จัดการ Active Directory",
+      "difficulty": 4,
+      "frequency": "รายวัน",
+      "note": "Domain Controller Management"
+    },
+    {
+      "category": "Directory Services & Identity Management",
+      "task": "กำหนดค่า DNS Services",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "Domain Name Resolution"
+    },
+    {
+      "category": "Directory Services & Identity Management",
+      "task": "จัดการ User Accounts",
+      "difficulty": 2,
+      "frequency": "รายวัน",
+      "note": "Account Creation/Modification"
+    },
+    {
+      "category": "Directory Services & Identity Management",
+      "task": "กำหนดค่า DHCP Services",
+      "difficulty": 2,
+      "frequency": "รายสัปดาห์",
+      "note": "IP Address Management"
+    },
+    {
+      "category": "Directory Services & Identity Management",
+      "task": "จัดการ Certificate Services",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "PKI Infrastructure"
+    },
+    {
+      "category": "Application & Service Management",
+      "task": "ติดตั้ง Enterprise Applications",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Business Applications"
+    },
+    {
+      "category": "Application & Service Management",
+      "task": "จัดการ IIS Web Services",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "Web Server Management"
+    },
+    {
+      "category": "Application & Service Management",
+      "task": "กำหนดค่า SQL Server",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "Database Services"
+    },
+    {
+      "category": "Application & Service Management",
+      "task": "จัดการ File Servers",
+      "difficulty": 2,
+      "frequency": "รายวัน",
+      "note": "Shared Storage"
+    },
+    {
+      "category": "Application & Service Management",
+      "task": "จัดการ Exchange Server",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "Email System"
+    },
+    {
+      "category": "Backup & Recovery",
+      "task": "วางแผน Backup Strategy",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Enterprise Backup Planning"
+    },
+    {
+      "category": "Backup & Recovery",
+      "task": "กำหนดค่า Veeam Backup",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "VM Backup Solutions"
+    },
+    {
+      "category": "Backup & Recovery",
+      "task": "ทดสอบ Recovery Procedures",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Disaster Recovery Testing"
+    },
+    {
+      "category": "Backup & Recovery",
+      "task": "จัดการ Tape Libraries",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "Physical Backup Media"
+    },
+    {
+      "category": "Backup & Recovery",
+      "task": "สร้าง DR Plans",
+      "difficulty": 5,
+      "frequency": "รายปี",
+      "note": "Business Continuity"
+    },
+    {
+      "category": "System Monitoring & Performance",
+      "task": "ติดตาม Server Performance",
+      "difficulty": 3,
+      "frequency": "รายวัน",
+      "note": "Resource Monitoring"
+    },
+    {
+      "category": "System Monitoring & Performance",
+      "task": "ติดตั้ง Monitoring Tools",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "SCOM/Nagios/Zabbix"
+    },
+    {
+      "category": "System Monitoring & Performance",
+      "task": "วิเคราะห์ System Logs",
+      "difficulty": 3,
+      "frequency": "รายวัน",
+      "note": "Event Log Analysis"
+    },
+    {
+      "category": "System Monitoring & Performance",
+      "task": "ทำ Capacity Planning",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Resource Forecasting"
+    },
+    {
+      "category": "System Monitoring & Performance",
+      "task": "สร้าง Performance Reports",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "SLA Reporting"
+    },
+    {
+      "category": "Security & Compliance",
+      "task": "จัดการ Antivirus Systems",
+      "difficulty": 2,
+      "frequency": "รายวัน",
+      "note": "Endpoint Protection"
+    },
+    {
+      "category": "Security & Compliance",
+      "task": "ทำ Patch Management",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "Security Updates"
+    },
+    {
+      "category": "Security & Compliance",
+      "task": "กำหนดค่า Windows Firewall",
+      "difficulty": 3,
+      "frequency": "รายเดือน",
+      "note": "Host-based Firewall"
+    },
+    {
+      "category": "Security & Compliance",
+      "task": "ทำ Security Auditing",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Compliance Assessment"
+    },
+    {
+      "category": "Security & Compliance",
+      "task": "จัดการ Access Control",
+      "difficulty": 3,
+      "frequency": "รายวัน",
+      "note": "Permission Management"
+    },
+    {
+      "category": "Cloud Services Management",
+      "task": "จัดการ Microsoft Azure",
+      "difficulty": 4,
+      "frequency": "รายวัน",
+      "note": "Cloud Infrastructure"
+    },
+    {
+      "category": "Cloud Services Management",
+      "task": "กำหนดค่า Office 365",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "Cloud Productivity"
+    },
+    {
+      "category": "Cloud Services Management",
+      "task": "จัดการ AWS Services",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "EC2/S3/RDS"
+    },
+    {
+      "category": "Cloud Services Management",
+      "task": "กำหนดค่า Hybrid Connectivity",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "VPN/ExpressRoute"
+    },
+    {
+      "category": "Cloud Services Management",
+      "task": "ทำ Cloud Cost Optimization",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Resource Optimization"
+    },
+    {
+      "category": "Automation & Scripting",
+      "task": "เขียน PowerShell Scripts",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "Windows Automation"
+    },
+    {
+      "category": "Automation & Scripting",
+      "task": "สร้าง Deployment Scripts",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Application Deployment"
+    },
+    {
+      "category": "Automation & Scripting",
+      "task": "ใช้งาน Configuration Management",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Ansible/Puppet/Chef"
+    },
+    {
+      "category": "Automation & Scripting",
+      "task": "พัฒนา Monitoring Scripts",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "Custom Monitoring"
+    },
+    {
+      "category": "Automation & Scripting",
+      "task": "สร้าง Reporting Scripts",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "Automated Reports"
+    },
+    {
+      "category": "User Support & Training",
+      "task": "สนับสนุน End Users",
+      "difficulty": 2,
+      "frequency": "รายวัน",
+      "note": "Technical Support"
+    },
+    {
+      "category": "User Support & Training",
+      "task": "สร้าง Technical Documentation",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "Procedures/Manuals"
+    },
+    {
+      "category": "User Support & Training",
+      "task": "ทำ User Training",
+      "difficulty": 3,
+      "frequency": "รายเดือน",
+      "note": "Knowledge Transfer"
+    },
+    {
+      "category": "User Support & Training",
+      "task": "จัดการ Help Desk",
+      "difficulty": 2,
+      "frequency": "รายวัน",
+      "note": "Ticketing System"
+    },
+    {
+      "category": "User Support & Training",
+      "task": "ทำ IT Asset Management",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "Hardware/Software Inventory"
+    }
+  ]
+}

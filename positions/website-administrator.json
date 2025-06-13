@@ -1,0 +1,587 @@
+{
+  "position": "Website Administrator",
+  "overview": "Professional responsible for managing, maintaining, and optimizing websites and web applications to ensure high availability, performance, security, and user experience",
+  "department": "Digital Operations",
+  "level": "Mid-Senior",
+  "requiredSkills": ["HTML/CSS", "JavaScript", "Web Servers", "CMS", "SEO", "Web Security"],
+  "categories": [
+    {
+      "name": "Web Server Management",
+      "description": "Manage and configure web servers and hosting infrastructure",
+      "icon": "🌐",
+      "responsibilities": [
+        "ติดตั้งและกำหนดค่า Apache Web Server",
+        "จัดการ Nginx และ Load Balancing",
+        "กำหนดค่า IIS (Internet Information Services)",
+        "จัดการ Virtual Hosts และ Domain Configuration",
+        "ติดตั้งและจัดการ PHP, Python, Node.js Runtime",
+        "กำหนดค่า Web Server Security และ Hardening"
+      ]
+    },
+    {
+      "name": "Content Management Systems",
+      "description": "Manage CMS platforms and web content",
+      "icon": "📝",
+      "responsibilities": [
+        "ติดตั้งและจัดการ WordPress Sites",
+        "จัดการ Drupal และ Joomla Platforms",
+        "กำหนดค่า Custom CMS Solutions",
+        "จัดการ Theme และ Plugin Management",
+        "ทำ Content Migration และ Import/Export",
+        "จัดการ Multi-site และ Network Installations"
+      ]
+    },
+    {
+      "name": "Database Management for Web",
+      "description": "Manage databases supporting web applications",
+      "icon": "🗄️",
+      "responsibilities": [
+        "จัดการ MySQL/MariaDB สำหรับ Web Applications",
+        "ติดตั้งและกำหนดค่า PostgreSQL",
+        "จัดการ MongoDB สำหรับ NoSQL Applications",
+        "ทำ Database Optimization สำหรับ Web Performance",
+        "จัดการ Database Connections และ Connection Pooling",
+        "ทำ Database Backup และ Recovery สำหรับ Web"
+      ]
+    },
+    {
+      "name": "Web Security & SSL Management",
+      "description": "Implement and maintain web security measures",
+      "icon": "🔒",
+      "responsibilities": [
+        "ติดตั้งและจัดการ SSL/TLS Certificates",
+        "กำหนดค่า Web Application Firewall (WAF)",
+        "ทำ Security Headers Configuration",
+        "จัดการ HTTPS Redirection และ HSTS",
+        "ติดตั้งและกำหนดค่า Security Plugins",
+        "ทำ Vulnerability Scanning และ Security Assessment"
+      ]
+    },
+    {
+      "name": "Performance Optimization",
+      "description": "Optimize website performance and speed",
+      "icon": "⚡",
+      "responsibilities": [
+        "ทำ Website Speed Optimization",
+        "กำหนดค่า Caching (Browser, Server, CDN)",
+        "ทำ Image Optimization และ Compression",
+        "จัดการ Content Delivery Network (CDN)",
+        "ทำ Code Minification และ Bundling",
+        "วิเคราะห์และปรับปรุง Core Web Vitals"
+      ]
+    },
+    {
+      "name": "Domain & DNS Management",
+      "description": "Manage domain names and DNS configuration",
+      "icon": "🌍",
+      "responsibilities": [
+        "จัดการ Domain Registration และ Renewal",
+        "กำหนดค่า DNS Records (A, CNAME, MX, TXT)",
+        "จัดการ Subdomain และ DNS Zones",
+        "ติดตั้งและจัดการ Private DNS Servers",
+        "ทำ DNS Load Balancing และ Failover",
+        "จัดการ Email MX Records และ SPF/DKIM"
+      ]
+    },
+    {
+      "name": "Backup & Disaster Recovery",
+      "description": "Implement backup strategies for websites",
+      "icon": "💾",
+      "responsibilities": [
+        "วางแผน Website Backup Strategy",
+        "จัดการ Automated Backup Systems",
+        "ทำ Database Backup สำหรับ Web Applications",
+        "ทดสอบ Website Recovery Procedures",
+        "จัดการ Version Control สำหรับ Website Code",
+        "สร้าง Disaster Recovery Plans สำหรับ Web Services"
+      ]
+    },
+    {
+      "name": "Monitoring & Analytics",
+      "description": "Monitor website performance and user analytics",
+      "icon": "📊",
+      "responsibilities": [
+        "ติดตั้งและจัดการ Google Analytics",
+        "ติดตาม Website Uptime และ Performance",
+        "จัดการ Server Monitoring Tools",
+        "วิเคราะห์ Web Traffic และ User Behavior",
+        "ทำ Error Monitoring และ Log Analysis",
+        "สร้าง Performance Reports และ Dashboards"
+      ]
+    },
+    {
+      "name": "SEO & Digital Marketing Support",
+      "description": "Support SEO and digital marketing initiatives",
+      "icon": "📈",
+      "responsibilities": [
+        "ทำ Technical SEO Optimization",
+        "จัดการ XML Sitemaps และ Robots.txt",
+        "กำหนดค่า Schema Markup และ Structured Data",
+        "ทำ Meta Tags และ Open Graph Optimization",
+        "จัดการ Google Search Console และ Bing Webmaster",
+        "ติดตั้งและจัดการ Marketing Tracking Codes"
+      ]
+    },
+    {
+      "name": "User Experience & Accessibility",
+      "description": "Ensure optimal user experience and accessibility",
+      "icon": "👥",
+      "responsibilities": [
+        "ทำ Website Accessibility (WCAG) Compliance",
+        "ทดสอบ Cross-browser Compatibility",
+        "จัดการ Mobile Responsiveness",
+        "ทำ User Experience Testing",
+        "จัดการ Website Localization และ Internationalization",
+        "ติดตั้งและจัดการ A/B Testing Tools"
+      ]
+    },
+    {
+      "name": "E-commerce Platform Management",
+      "description": "Manage e-commerce websites and platforms",
+      "icon": "🛒",
+      "responsibilities": [
+        "จัดการ WooCommerce และ Shopify Stores",
+        "ติดตั้งและกำหนดค่า Magento",
+        "จัดการ Payment Gateway Integration",
+        "ทำ Inventory Management Systems",
+        "จัดการ Shopping Cart และ Checkout Optimization",
+        "ติดตั้งและจัดการ E-commerce Security"
+      ]
+    },
+    {
+      "name": "Web Development Support",
+      "description": "Provide technical support for web development",
+      "icon": "💻",
+      "responsibilities": [
+        "ทำ Code Deployment และ Version Control",
+        "จัดการ Development/Staging/Production Environments",
+        "ติดตั้งและกำหนดค่า Git Repositories",
+        "สนับสนุน Frontend และ Backend Development",
+        "ทำ API Integration และ Third-party Services",
+        "จัดการ Build Tools และ CI/CD Pipelines"
+      ]
+    }
+  ],
+  "scorecard": [
+    {
+      "category": "Web Server Management",
+      "task": "ติดตั้งและกำหนดค่า Apache",
+      "difficulty": 3,
+      "frequency": "รายเดือน",
+      "note": "Web Server Setup"
+    },
+    {
+      "category": "Web Server Management",
+      "task": "จัดการ Nginx Load Balancing",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "High Availability"
+    },
+    {
+      "category": "Web Server Management",
+      "task": "กำหนดค่า Virtual Hosts",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "Multi-site Hosting"
+    },
+    {
+      "category": "Web Server Management",
+      "task": "จัดการ PHP Runtime",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "PHP Configuration"
+    },
+    {
+      "category": "Web Server Management",
+      "task": "ทำ Web Server Hardening",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Security Configuration"
+    },
+    {
+      "category": "Content Management Systems",
+      "task": "ติดตั้งและจัดการ WordPress",
+      "difficulty": 2,
+      "frequency": "รายสัปดาห์",
+      "note": "CMS Installation"
+    },
+    {
+      "category": "Content Management Systems",
+      "task": "จัดการ Plugin และ Theme",
+      "difficulty": 3,
+      "frequency": "รายวัน",
+      "note": "WordPress Management"
+    },
+    {
+      "category": "Content Management Systems",
+      "task": "ทำ Content Migration",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Data Migration"
+    },
+    {
+      "category": "Content Management Systems",
+      "task": "จัดการ Drupal Sites",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Advanced CMS"
+    },
+    {
+      "category": "Content Management Systems",
+      "task": "กำหนดค่า Multi-site Network",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Network Administration"
+    },
+    {
+      "category": "Database Management for Web",
+      "task": "จัดการ MySQL สำหรับ Web",
+      "difficulty": 3,
+      "frequency": "รายวัน",
+      "note": "Web Database Management"
+    },
+    {
+      "category": "Database Management for Web",
+      "task": "ทำ Database Optimization",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "Performance Tuning"
+    },
+    {
+      "category": "Database Management for Web",
+      "task": "จัดการ Connection Pooling",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Database Connections"
+    },
+    {
+      "category": "Database Management for Web",
+      "task": "ติดตั้ง PostgreSQL",
+      "difficulty": 3,
+      "frequency": "รายเดือน",
+      "note": "Database Setup"
+    },
+    {
+      "category": "Database Management for Web",
+      "task": "จัดการ MongoDB",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "NoSQL Database"
+    },
+    {
+      "category": "Web Security & SSL Management",
+      "task": "ติดตั้ง SSL Certificates",
+      "difficulty": 3,
+      "frequency": "รายเดือน",
+      "note": "HTTPS Implementation"
+    },
+    {
+      "category": "Web Security & SSL Management",
+      "task": "กำหนดค่า Web Application Firewall",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "WAF Configuration"
+    },
+    {
+      "category": "Web Security & SSL Management",
+      "task": "ทำ Security Headers Configuration",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "HTTP Security Headers"
+    },
+    {
+      "category": "Web Security & SSL Management",
+      "task": "จัดการ HTTPS Redirection",
+      "difficulty": 2,
+      "frequency": "รายสัปดาห์",
+      "note": "SSL Enforcement"
+    },
+    {
+      "category": "Web Security & SSL Management",
+      "task": "ทำ Vulnerability Scanning",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "Security Assessment"
+    },
+    {
+      "category": "Performance Optimization",
+      "task": "ทำ Website Speed Optimization",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "Performance Tuning"
+    },
+    {
+      "category": "Performance Optimization",
+      "task": "กำหนดค่า Caching Systems",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Browser/Server Cache"
+    },
+    {
+      "category": "Performance Optimization",
+      "task": "ทำ Image Optimization",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "Image Compression"
+    },
+    {
+      "category": "Performance Optimization",
+      "task": "จัดการ CDN Configuration",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Content Delivery Network"
+    },
+    {
+      "category": "Performance Optimization",
+      "task": "วิเคราะห์ Core Web Vitals",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "Google Performance Metrics"
+    },
+    {
+      "category": "Domain & DNS Management",
+      "task": "จัดการ Domain Registration",
+      "difficulty": 2,
+      "frequency": "รายปี",
+      "note": "Domain Management"
+    },
+    {
+      "category": "Domain & DNS Management",
+      "task": "กำหนดค่า DNS Records",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "DNS Configuration"
+    },
+    {
+      "category": "Domain & DNS Management",
+      "task": "จัดการ Subdomain",
+      "difficulty": 2,
+      "frequency": "รายสัปดาห์",
+      "note": "DNS Zones"
+    },
+    {
+      "category": "Domain & DNS Management",
+      "task": "ทำ DNS Load Balancing",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "DNS Failover"
+    },
+    {
+      "category": "Domain & DNS Management",
+      "task": "จัดการ Email MX Records",
+      "difficulty": 3,
+      "frequency": "รายเดือน",
+      "note": "Email Configuration"
+    },
+    {
+      "category": "Backup & Disaster Recovery",
+      "task": "วางแผน Website Backup",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Backup Strategy"
+    },
+    {
+      "category": "Backup & Disaster Recovery",
+      "task": "จัดการ Automated Backup",
+      "difficulty": 3,
+      "frequency": "รายวัน",
+      "note": "Backup Automation"
+    },
+    {
+      "category": "Backup & Disaster Recovery",
+      "task": "ทดสอบ Recovery Procedures",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Disaster Recovery Testing"
+    },
+    {
+      "category": "Backup & Disaster Recovery",
+      "task": "จัดการ Version Control",
+      "difficulty": 3,
+      "frequency": "รายวัน",
+      "note": "Git Management"
+    },
+    {
+      "category": "Backup & Disaster Recovery",
+      "task": "สร้าง DR Plans",
+      "difficulty": 4,
+      "frequency": "รายปี",
+      "note": "Business Continuity"
+    },
+    {
+      "category": "Monitoring & Analytics",
+      "task": "ติดตั้ง Google Analytics",
+      "difficulty": 2,
+      "frequency": "รายเดือน",
+      "note": "Web Analytics"
+    },
+    {
+      "category": "Monitoring & Analytics",
+      "task": "ติดตาม Website Uptime",
+      "difficulty": 3,
+      "frequency": "รายวัน",
+      "note": "Uptime Monitoring"
+    },
+    {
+      "category": "Monitoring & Analytics",
+      "task": "วิเคราะห์ Web Traffic",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "Traffic Analysis"
+    },
+    {
+      "category": "Monitoring & Analytics",
+      "task": "ทำ Error Monitoring",
+      "difficulty": 4,
+      "frequency": "รายวัน",
+      "note": "Error Tracking"
+    },
+    {
+      "category": "Monitoring & Analytics",
+      "task": "สร้าง Performance Reports",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "Performance Reporting"
+    },
+    {
+      "category": "SEO & Digital Marketing Support",
+      "task": "ทำ Technical SEO",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "SEO Optimization"
+    },
+    {
+      "category": "SEO & Digital Marketing Support",
+      "task": "จัดการ XML Sitemaps",
+      "difficulty": 2,
+      "frequency": "รายสัปดาห์",
+      "note": "Search Engine Indexing"
+    },
+    {
+      "category": "SEO & Digital Marketing Support",
+      "task": "กำหนดค่า Schema Markup",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Structured Data"
+    },
+    {
+      "category": "SEO & Digital Marketing Support",
+      "task": "ทำ Meta Tags Optimization",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "SEO Meta Data"
+    },
+    {
+      "category": "SEO & Digital Marketing Support",
+      "task": "จัดการ Google Search Console",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "Webmaster Tools"
+    },
+    {
+      "category": "User Experience & Accessibility",
+      "task": "ทำ WCAG Compliance",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Accessibility Standards"
+    },
+    {
+      "category": "User Experience & Accessibility",
+      "task": "ทดสอบ Cross-browser Compatibility",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "Browser Testing"
+    },
+    {
+      "category": "User Experience & Accessibility",
+      "task": "จัดการ Mobile Responsiveness",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "Mobile Optimization"
+    },
+    {
+      "category": "User Experience & Accessibility",
+      "task": "ทำ User Experience Testing",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "UX Testing"
+    },
+    {
+      "category": "User Experience & Accessibility",
+      "task": "จัดการ A/B Testing",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Conversion Optimization"
+    },
+    {
+      "category": "E-commerce Platform Management",
+      "task": "จัดการ WooCommerce Stores",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "E-commerce Management"
+    },
+    {
+      "category": "E-commerce Platform Management",
+      "task": "ติดตั้งและกำหนดค่า Magento",
+      "difficulty": 5,
+      "frequency": "รายเดือน",
+      "note": "Enterprise E-commerce"
+    },
+    {
+      "category": "E-commerce Platform Management",
+      "task": "จัดการ Payment Gateway",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Payment Integration"
+    },
+    {
+      "category": "E-commerce Platform Management",
+      "task": "ทำ Checkout Optimization",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Conversion Rate Optimization"
+    },
+    {
+      "category": "E-commerce Platform Management",
+      "task": "จัดการ E-commerce Security",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "PCI Compliance"
+    },
+    {
+      "category": "Web Development Support",
+      "task": "ทำ Code Deployment",
+      "difficulty": 3,
+      "frequency": "รายวัน",
+      "note": "Development Support"
+    },
+    {
+      "category": "Web Development Support",
+      "task": "จัดการ Development Environments",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "Dev/Staging/Prod"
+    },
+    {
+      "category": "Web Development Support",
+      "task": "ติดตั้ง Git Repositories",
+      "difficulty": 3,
+      "frequency": "รายเดือน",
+      "note": "Version Control"
+    },
+    {
+      "category": "Web Development Support",
+      "task": "ทำ API Integration",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Third-party Services"
+    },
+    {
+      "category": "Web Development Support",
+      "task": "จัดการ CI/CD Pipelines",
+      "difficulty": 5,
+      "frequency": "รายเดือน",
+      "note": "Continuous Integration"
+    }
+  ]
+}

@@ -1,0 +1,382 @@
+{
+  "position": "Network Administrator",
+  "overview": "Professional responsible for designing, implementing, managing, and maintaining network infrastructure to ensure reliable, secure, and efficient data communication",
+  "department": "IT Infrastructure",
+  "level": "Mid-Senior",
+  "requiredSkills": ["Cisco", "Routing", "Switching", "Firewall", "VPN", "Network Security"],
+  "categories": [
+    {
+      "name": "Network Design & Architecture",
+      "description": "Design and plan network topology and infrastructure",
+      "icon": "🏗️",
+      "responsibilities": [
+        "ออกแบบ Network Topology และ Architecture",
+        "วางแผน Network Capacity และ Scalability",
+        "ออกแบบ VLAN และ Subnet Structure",
+        "วางแผน Network Redundancy และ High Availability",
+        "ออกแบบ WAN และ Campus Network",
+        "จัดทำ Network Documentation และ Diagrams"
+      ]
+    },
+    {
+      "name": "Network Equipment Management",
+      "description": "Configure and manage network devices and equipment",
+      "icon": "⚙️",
+      "responsibilities": [
+        "กำหนดค่า Router และ Layer 3 Switch",
+        "กำหนดค่า Layer 2 Switch และ VLAN",
+        "ติดตั้งและกำหนดค่า Wireless Access Points",
+        "จัดการ Network Device Firmware และ IOS",
+        "กำหนดค่า Spanning Tree Protocol (STP)",
+        "จัดการ Port Security และ Access Control"
+      ]
+    },
+    {
+      "name": "Routing & Switching",
+      "description": "Implement and manage routing protocols and switching technologies",
+      "icon": "🔄",
+      "responsibilities": [
+        "กำหนดค่า Static และ Dynamic Routing",
+        "จัดการ OSPF, EIGRP, BGP Routing Protocols",
+        "กำหนดค่า InterVLAN Routing",
+        "จัดการ Link Aggregation (EtherChannel)",
+        "กำหนดค่า HSRP/VRRP/GLBP",
+        "ทำ Route Redistribution และ Route Filtering"
+      ]
+    },
+    {
+      "name": "Network Security",
+      "description": "Implement and maintain network security measures",
+      "icon": "🔒",
+      "responsibilities": [
+        "กำหนดค่า Firewall Rules และ Policies",
+        "ติดตั้งและจัดการ VPN (Site-to-Site, Remote Access)",
+        "กำหนดค่า Access Control Lists (ACL)",
+        "จัดการ Network Segmentation และ DMZ",
+        "ติดตั้งและกำหนดค่า IDS/IPS",
+        "ทำ Network Security Assessment และ Auditing"
+      ]
+    },
+    {
+      "name": "Network Monitoring & Performance",
+      "description": "Monitor network performance and optimize network resources",
+      "icon": "📊",
+      "responsibilities": [
+        "ติดตาม Network Performance และ Utilization",
+        "ติดตั้งและกำหนดค่า Network Monitoring Tools",
+        "วิเคราะห์ Network Traffic และ Bandwidth Usage",
+        "ทำ Network Performance Tuning",
+        "จัดการ QoS (Quality of Service)",
+        "สร้าง Network Performance Reports"
+      ]
+    },
+    {
+      "name": "Network Services",
+      "description": "Manage network services and protocols",
+      "icon": "🌐",
+      "responsibilities": [
+        "จัดการ DHCP Services และ IP Address Management",
+        "กำหนดค่า DNS Services และ Resolution",
+        "จัดการ NTP (Network Time Protocol)",
+        "กำหนดค่า SNMP และ Network Management",
+        "จัดการ RADIUS/TACACS+ Authentication",
+        "ติดตั้งและกำหนดค่า Load Balancer"
+      ]
+    },
+    {
+      "name": "Troubleshooting & Maintenance",
+      "description": "Diagnose and resolve network issues",
+      "icon": "🔧",
+      "responsibilities": [
+        "แก้ไขปัญหา Network Connectivity",
+        "วิเคราะห์และแก้ไข Network Performance Issues",
+        "แก้ไขปัญหา Routing และ Switching",
+        "แก้ไขปัญหา VLAN และ Trunking",
+        "ทำ Network Cable Testing และ Certification",
+        "จัดการ Network Change Management"
+      ]
+    }
+  ],
+  "scorecard": [
+    {
+      "category": "Network Design & Architecture",
+      "task": "ออกแบบ Network Topology",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Campus/Enterprise Design"
+    },
+    {
+      "category": "Network Design & Architecture",
+      "task": "วางแผน Network Capacity",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Bandwidth Planning"
+    },
+    {
+      "category": "Network Design & Architecture",
+      "task": "ออกแบบ VLAN Structure",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "Layer 2 Segmentation"
+    },
+    {
+      "category": "Network Design & Architecture",
+      "task": "วางแผน High Availability",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Redundancy Design"
+    },
+    {
+      "category": "Network Design & Architecture",
+      "task": "จัดทำ Network Documentation",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "Visio Diagrams"
+    },
+    {
+      "category": "Network Equipment Management",
+      "task": "กำหนดค่า Router",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "Cisco/Juniper/HP"
+    },
+    {
+      "category": "Network Equipment Management",
+      "task": "กำหนดค่า Layer 2 Switch",
+      "difficulty": 3,
+      "frequency": "รายวัน",
+      "note": "Port Configuration"
+    },
+    {
+      "category": "Network Equipment Management",
+      "task": "กำหนดค่า Wireless AP",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "WiFi Configuration"
+    },
+    {
+      "category": "Network Equipment Management",
+      "task": "อัปเดต Device Firmware",
+      "difficulty": 3,
+      "frequency": "รายเดือน",
+      "note": "IOS/Software Updates"
+    },
+    {
+      "category": "Network Equipment Management",
+      "task": "กำหนดค่า Spanning Tree",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "STP/RSTP/MSTP"
+    },
+    {
+      "category": "Routing & Switching",
+      "task": "กำหนดค่า Static Routing",
+      "difficulty": 2,
+      "frequency": "รายสัปดาห์",
+      "note": "Basic Routing"
+    },
+    {
+      "category": "Routing & Switching",
+      "task": "กำหนดค่า OSPF",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Dynamic Routing Protocol"
+    },
+    {
+      "category": "Routing & Switching",
+      "task": "กำหนดค่า EIGRP",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Cisco Proprietary Protocol"
+    },
+    {
+      "category": "Routing & Switching",
+      "task": "กำหนดค่า BGP",
+      "difficulty": 5,
+      "frequency": "รายปี",
+      "note": "Border Gateway Protocol"
+    },
+    {
+      "category": "Routing & Switching",
+      "task": "กำหนดค่า InterVLAN Routing",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "Layer 3 Switching"
+    },
+    {
+      "category": "Routing & Switching",
+      "task": "กำหนดค่า EtherChannel",
+      "difficulty": 3,
+      "frequency": "รายเดือน",
+      "note": "Link Aggregation"
+    },
+    {
+      "category": "Routing & Switching",
+      "task": "กำหนดค่า HSRP/VRRP",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Gateway Redundancy"
+    },
+    {
+      "category": "Network Security",
+      "task": "กำหนดค่า Firewall Rules",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "Security Policies"
+    },
+    {
+      "category": "Network Security",
+      "task": "กำหนดค่า Site-to-Site VPN",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "IPSec Tunnels"
+    },
+    {
+      "category": "Network Security",
+      "task": "กำหนดค่า Remote Access VPN",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "SSL/IPSec VPN"
+    },
+    {
+      "category": "Network Security",
+      "task": "กำหนดค่า Access Control Lists",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "Traffic Filtering"
+    },
+    {
+      "category": "Network Security",
+      "task": "จัดการ Network Segmentation",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Security Zones"
+    },
+    {
+      "category": "Network Security",
+      "task": "ติดตั้งและกำหนดค่า IDS/IPS",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Intrusion Detection/Prevention"
+    },
+    {
+      "category": "Network Monitoring & Performance",
+      "task": "ติดตาม Network Performance",
+      "difficulty": 3,
+      "frequency": "รายวัน",
+      "note": "Real-time Monitoring"
+    },
+    {
+      "category": "Network Monitoring & Performance",
+      "task": "ติดตั้ง Monitoring Tools",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "PRTG/SolarWinds/Nagios"
+    },
+    {
+      "category": "Network Monitoring & Performance",
+      "task": "วิเคราะห์ Network Traffic",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "Traffic Analysis"
+    },
+    {
+      "category": "Network Monitoring & Performance",
+      "task": "ทำ Performance Tuning",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Optimization"
+    },
+    {
+      "category": "Network Monitoring & Performance",
+      "task": "กำหนดค่า QoS",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Quality of Service"
+    },
+    {
+      "category": "Network Services",
+      "task": "จัดการ DHCP Services",
+      "difficulty": 2,
+      "frequency": "รายสัปดาห์",
+      "note": "IP Address Management"
+    },
+    {
+      "category": "Network Services",
+      "task": "กำหนดค่า DNS Services",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "Name Resolution"
+    },
+    {
+      "category": "Network Services",
+      "task": "กำหนดค่า NTP",
+      "difficulty": 2,
+      "frequency": "รายเดือน",
+      "note": "Time Synchronization"
+    },
+    {
+      "category": "Network Services",
+      "task": "กำหนดค่า SNMP",
+      "difficulty": 3,
+      "frequency": "รายเดือน",
+      "note": "Network Management"
+    },
+    {
+      "category": "Network Services",
+      "task": "จัดการ RADIUS Authentication",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "AAA Services"
+    },
+    {
+      "category": "Network Services",
+      "task": "กำหนดค่า Load Balancer",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Traffic Distribution"
+    },
+    {
+      "category": "Troubleshooting & Maintenance",
+      "task": "แก้ไขปัญหา Connectivity",
+      "difficulty": 3,
+      "frequency": "รายวัน",
+      "note": "Layer 1-3 Issues"
+    },
+    {
+      "category": "Troubleshooting & Maintenance",
+      "task": "วิเคราะห์ Performance Issues",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "Bottleneck Analysis"
+    },
+    {
+      "category": "Troubleshooting & Maintenance",
+      "task": "แก้ไขปัญหา Routing",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "Routing Table Issues"
+    },
+    {
+      "category": "Troubleshooting & Maintenance",
+      "task": "แก้ไขปัญหา VLAN",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "VLAN Troubleshooting"
+    },
+    {
+      "category": "Troubleshooting & Maintenance",
+      "task": "ทำ Cable Testing",
+      "difficulty": 2,
+      "frequency": "รายสัปดาห์",
+      "note": "Physical Layer Testing"
+    },
+    {
+      "category": "Troubleshooting & Maintenance",
+      "task": "จัดการ Change Management",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "Network Changes"
+    }
+  ]
+}

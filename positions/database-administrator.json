@@ -1,0 +1,553 @@
+{
+  "position": "Database Administrator",
+  "overview": "Professional responsible for managing, maintaining, and securing various database systems across multiple platforms to ensure data integrity, availability, performance, and compliance with organizational requirements",
+  "department": "Data Management",
+  "level": "Mid-Senior",
+  "requiredSkills": ["SQL", "Database Design", "MySQL", "PostgreSQL", "SQL Server", "MongoDB", "Cloud Databases", "Data Security"],
+  "categories": [
+    {
+      "name": "Multi-Platform Database Management",
+      "description": "Manage various database platforms and systems",
+      "icon": "🗄️",
+      "responsibilities": [
+        "จัดการ MySQL/MariaDB Database Systems",
+        "ดูแล PostgreSQL Database Clusters",
+        "จัดการ Microsoft SQL Server Instances",
+        "บริหาร NoSQL Databases (MongoDB, Cassandra, Redis)",
+        "จัดการ SQLite สำหรับ Embedded Applications",
+        "ดูแล Graph Databases (Neo4j, Amazon Neptune)"
+      ]
+    },
+    {
+      "name": "Database Design & Architecture",
+      "description": "Design and architect database solutions",
+      "icon": "🏗️",
+      "responsibilities": [
+        "ออกแบบ Database Schema และ Entity-Relationship Diagrams",
+        "วางแผน Database Architecture สำหรับ Enterprise",
+        "ทำ Database Normalization และ Denormalization",
+        "ออกแบบ Data Warehouse และ Data Lake Architecture",
+        "วางแผน Distributed Database Systems",
+        "สร้าง Database Standards และ Naming Conventions"
+      ]
+    },
+    {
+      "name": "Cloud Database Services",
+      "description": "Manage cloud-based database solutions",
+      "icon": "☁️",
+      "responsibilities": [
+        "จัดการ Amazon RDS (MySQL, PostgreSQL, SQL Server)",
+        "ดูแล Azure SQL Database และ Azure Database Services",
+        "บริหาร Google Cloud SQL และ Firestore",
+        "จัดการ MongoDB Atlas และ Cloud Databases",
+        "ทำ Database Migration to Cloud",
+        "ใช้งาน Database-as-a-Service (DBaaS) Solutions"
+      ]
+    },
+    {
+      "name": "Data Security & Compliance",
+      "description": "Implement data security and regulatory compliance",
+      "icon": "🔒",
+      "responsibilities": [
+        "จัดการ Database User Authentication และ Authorization",
+        "ติดตั้งและกำหนดค่า Database Encryption (TDE, SSL/TLS)",
+        "ทำ Data Masking และ Data Anonymization",
+        "จัดการ GDPR, HIPAA, PCI-DSS Compliance",
+        "ติดตั้งและจัดการ Database Auditing",
+        "ทำ Database Security Assessment และ Penetration Testing"
+      ]
+    },
+    {
+      "name": "Performance Tuning & Optimization",
+      "description": "Optimize database performance across platforms",
+      "icon": "⚡",
+      "responsibilities": [
+        "วิเคราะห์และปรับปรุง SQL Query Performance",
+        "ทำ Database Index Optimization (B-tree, Hash, Bitmap)",
+        "จัดการ Database Connection Pooling",
+        "ปรับปรุง Database Configuration Parameters",
+        "ทำ Database Partitioning และ Sharding",
+        "วิเคราะห์ Database Performance Metrics"
+      ]
+    },
+    {
+      "name": "Backup & Recovery Management",
+      "description": "Implement comprehensive backup and recovery strategies",
+      "icon": "💾",
+      "responsibilities": [
+        "วางแผน Cross-Platform Backup Strategy",
+        "ติดตั้งและจัดการ Database Backup Tools",
+        "ทำ Point-in-Time Recovery (PITR)",
+        "จัดการ Database Replication (Master-Slave, Master-Master)",
+        "ทดสอบ Database Recovery Procedures",
+        "สร้าง Disaster Recovery Plans"
+      ]
+    },
+    {
+      "name": "Data Integration & ETL",
+      "description": "Manage data integration and ETL processes",
+      "icon": "🔄",
+      "responsibilities": [
+        "ออกแบบและพัฒนา ETL Processes",
+        "จัดการ Data Pipeline และ Data Flow",
+        "ทำ Database Migration ระหว่าง Platforms",
+        "ใช้งาน Data Integration Tools (Talend, Pentaho, SSIS)",
+        "จัดการ Real-time Data Synchronization",
+        "ทำ Data Quality Assessment และ Cleansing"
+      ]
+    },
+    {
+      "name": "Database Monitoring & Alerting",
+      "description": "Monitor database health and performance",
+      "icon": "📊",
+      "responsibilities": [
+        "ติดตั้งและกำหนดค่า Database Monitoring Tools",
+        "สร้าง Database Performance Dashboards",
+        "จัดการ Database Alert Systems",
+        "ติดตาม Database Resource Utilization",
+        "วิเคราะห์ Database Log Files",
+        "ทำ Capacity Planning และ Growth Forecasting"
+      ]
+    },
+    {
+      "name": "Data Governance & Management",
+      "description": "Implement data governance policies and procedures",
+      "icon": "📋",
+      "responsibilities": [
+        "สร้าง Data Governance Policies",
+        "จัดการ Data Catalog และ Metadata Management",
+        "ทำ Data Lineage และ Impact Analysis",
+        "จัดการ Data Retention Policies",
+        "ใช้งาน Master Data Management (MDM)",
+        "ทำ Data Lifecycle Management"
+      ]
+    },
+    {
+      "name": "Automation & Scripting",
+      "description": "Automate database operations and maintenance",
+      "icon": "🤖",
+      "responsibilities": [
+        "เขียน Database Automation Scripts (Python, PowerShell, Bash)",
+        "สร้าง Database Maintenance Jobs",
+        "ใช้งาน Infrastructure as Code สำหรับ Databases",
+        "พัฒนา Database Deployment Automation",
+        "สร้าง Database Health Check Scripts",
+        "ทำ Database Configuration Management"
+      ]
+    },
+    {
+      "name": "Troubleshooting & Support",
+      "description": "Diagnose and resolve database issues",
+      "icon": "🔧",
+      "responsibilities": [
+        "แก้ไขปัญหา Database Performance Issues",
+        "วิเคราะห์และแก้ไข Database Corruption",
+        "แก้ไขปัญหา Database Connectivity",
+        "จัดการ Database Lock และ Deadlock Issues",
+        "แก้ไขปัญหา Database Replication",
+        "สนับสนุน Application Development Teams"
+      ]
+    }
+  ],
+  "scorecard": [
+    {
+      "category": "Multi-Platform Database Management",
+      "task": "จัดการ MySQL Database",
+      "difficulty": 3,
+      "frequency": "รายวัน",
+      "note": "MySQL/MariaDB Administration"
+    },
+    {
+      "category": "Multi-Platform Database Management",
+      "task": "ดูแล PostgreSQL Clusters",
+      "difficulty": 4,
+      "frequency": "รายวัน",
+      "note": "PostgreSQL Management"
+    },
+    {
+      "category": "Multi-Platform Database Management",
+      "task": "จัดการ SQL Server Instances",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "Microsoft SQL Server"
+    },
+    {
+      "category": "Multi-Platform Database Management",
+      "task": "บริหาร MongoDB Collections",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "NoSQL Database Management"
+    },
+    {
+      "category": "Multi-Platform Database Management",
+      "task": "จัดการ Redis Cache",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "In-Memory Database"
+    },
+    {
+      "category": "Multi-Platform Database Management",
+      "task": "ดูแล Cassandra Clusters",
+      "difficulty": 5,
+      "frequency": "รายเดือน",
+      "note": "Distributed NoSQL"
+    },
+    {
+      "category": "Database Design & Architecture",
+      "task": "ออกแบบ Database Schema",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "ERD Design"
+    },
+    {
+      "category": "Database Design & Architecture",
+      "task": "วางแผน Database Architecture",
+      "difficulty": 5,
+      "frequency": "รายเดือน",
+      "note": "Enterprise Architecture"
+    },
+    {
+      "category": "Database Design & Architecture",
+      "task": "ทำ Database Normalization",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "Data Modeling"
+    },
+    {
+      "category": "Database Design & Architecture",
+      "task": "ออกแบบ Data Warehouse",
+      "difficulty": 5,
+      "frequency": "รายเดือน",
+      "note": "OLAP Design"
+    },
+    {
+      "category": "Database Design & Architecture",
+      "task": "วางแผน Distributed Systems",
+      "difficulty": 5,
+      "frequency": "รายเดือน",
+      "note": "Scalability Planning"
+    },
+    {
+      "category": "Cloud Database Services",
+      "task": "จัดการ Amazon RDS",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "AWS Database Services"
+    },
+    {
+      "category": "Cloud Database Services",
+      "task": "ดูแล Azure SQL Database",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "Microsoft Cloud DB"
+    },
+    {
+      "category": "Cloud Database Services",
+      "task": "บริหาร Google Cloud SQL",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "GCP Database Services"
+    },
+    {
+      "category": "Cloud Database Services",
+      "task": "จัดการ MongoDB Atlas",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "Cloud NoSQL"
+    },
+    {
+      "category": "Cloud Database Services",
+      "task": "ทำ Database Migration to Cloud",
+      "difficulty": 5,
+      "frequency": "รายเดือน",
+      "note": "Cloud Migration"
+    },
+    {
+      "category": "Data Security & Compliance",
+      "task": "จัดการ User Authentication",
+      "difficulty": 3,
+      "frequency": "รายวัน",
+      "note": "Access Control"
+    },
+    {
+      "category": "Data Security & Compliance",
+      "task": "ติดตั้ง Database Encryption",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "TDE Implementation"
+    },
+    {
+      "category": "Data Security & Compliance",
+      "task": "ทำ Data Masking",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Data Privacy"
+    },
+    {
+      "category": "Data Security & Compliance",
+      "task": "จัดการ GDPR Compliance",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Regulatory Compliance"
+    },
+    {
+      "category": "Data Security & Compliance",
+      "task": "ติดตั้ง Database Auditing",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "Audit Trail"
+    },
+    {
+      "category": "Performance Tuning & Optimization",
+      "task": "วิเคราะห์ SQL Query Performance",
+      "difficulty": 4,
+      "frequency": "รายวัน",
+      "note": "Query Optimization"
+    },
+    {
+      "category": "Performance Tuning & Optimization",
+      "task": "ทำ Index Optimization",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "Index Management"
+    },
+    {
+      "category": "Performance Tuning & Optimization",
+      "task": "จัดการ Connection Pooling",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "Connection Management"
+    },
+    {
+      "category": "Performance Tuning & Optimization",
+      "task": "ปรับปรุง Database Parameters",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Configuration Tuning"
+    },
+    {
+      "category": "Performance Tuning & Optimization",
+      "task": "ทำ Database Partitioning",
+      "difficulty": 5,
+      "frequency": "รายเดือน",
+      "note": "Data Partitioning"
+    },
+    {
+      "category": "Backup & Recovery Management",
+      "task": "วางแผน Backup Strategy",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Backup Planning"
+    },
+    {
+      "category": "Backup & Recovery Management",
+      "task": "ติดตั้ง Backup Tools",
+      "difficulty": 3,
+      "frequency": "รายเดือน",
+      "note": "Backup Automation"
+    },
+    {
+      "category": "Backup & Recovery Management",
+      "task": "ทำ Point-in-Time Recovery",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "PITR Implementation"
+    },
+    {
+      "category": "Backup & Recovery Management",
+      "task": "จัดการ Database Replication",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "Master-Slave Setup"
+    },
+    {
+      "category": "Backup & Recovery Management",
+      "task": "ทดสอบ Recovery Procedures",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Disaster Recovery Testing"
+    },
+    {
+      "category": "Data Integration & ETL",
+      "task": "ออกแบบ ETL Processes",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "Extract Transform Load"
+    },
+    {
+      "category": "Data Integration & ETL",
+      "task": "จัดการ Data Pipeline",
+      "difficulty": 4,
+      "frequency": "รายวัน",
+      "note": "Data Flow Management"
+    },
+    {
+      "category": "Data Integration & ETL",
+      "task": "ทำ Database Migration",
+      "difficulty": 5,
+      "frequency": "รายเดือน",
+      "note": "Platform Migration"
+    },
+    {
+      "category": "Data Integration & ETL",
+      "task": "ใช้งาน ETL Tools",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "Talend, SSIS, Pentaho"
+    },
+    {
+      "category": "Data Integration & ETL",
+      "task": "จัดการ Real-time Sync",
+      "difficulty": 5,
+      "frequency": "รายเดือน",
+      "note": "Data Synchronization"
+    },
+    {
+      "category": "Database Monitoring & Alerting",
+      "task": "ติดตั้ง Monitoring Tools",
+      "difficulty": 3,
+      "frequency": "รายเดือน",
+      "note": "Database Monitoring"
+    },
+    {
+      "category": "Database Monitoring & Alerting",
+      "task": "สร้าง Performance Dashboards",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Visual Monitoring"
+    },
+    {
+      "category": "Database Monitoring & Alerting",
+      "task": "จัดการ Alert Systems",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "Proactive Alerting"
+    },
+    {
+      "category": "Database Monitoring & Alerting",
+      "task": "ติดตาม Resource Utilization",
+      "difficulty": 3,
+      "frequency": "รายวัน",
+      "note": "Performance Monitoring"
+    },
+    {
+      "category": "Database Monitoring & Alerting",
+      "task": "ทำ Capacity Planning",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Growth Planning"
+    },
+    {
+      "category": "Data Governance & Management",
+      "task": "สร้าง Data Governance Policies",
+      "difficulty": 4,
+      "frequency": "รายปี",
+      "note": "Policy Development"
+    },
+    {
+      "category": "Data Governance & Management",
+      "task": "จัดการ Data Catalog",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Metadata Management"
+    },
+    {
+      "category": "Data Governance & Management",
+      "task": "ทำ Data Lineage",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Data Traceability"
+    },
+    {
+      "category": "Data Governance & Management",
+      "task": "จัดการ Data Retention",
+      "difficulty": 3,
+      "frequency": "รายเดือน",
+      "note": "Data Lifecycle"
+    },
+    {
+      "category": "Data Governance & Management",
+      "task": "ใช้งาน Master Data Management",
+      "difficulty": 5,
+      "frequency": "รายเดือน",
+      "note": "MDM Implementation"
+    },
+    {
+      "category": "Automation & Scripting",
+      "task": "เขียน Database Scripts",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "Python/PowerShell/Bash"
+    },
+    {
+      "category": "Automation & Scripting",
+      "task": "สร้าง Maintenance Jobs",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "Automated Maintenance"
+    },
+    {
+      "category": "Automation & Scripting",
+      "task": "ใช้งาน Infrastructure as Code",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "IaC for Databases"
+    },
+    {
+      "category": "Automation & Scripting",
+      "task": "พัฒนา Deployment Automation",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "CI/CD for Databases"
+    },
+    {
+      "category": "Automation & Scripting",
+      "task": "สร้าง Health Check Scripts",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "Automated Monitoring"
+    },
+    {
+      "category": "Troubleshooting & Support",
+      "task": "แก้ไขปัญหา Performance Issues",
+      "difficulty": 4,
+      "frequency": "รายวัน",
+      "note": "Performance Troubleshooting"
+    },
+    {
+      "category": "Troubleshooting & Support",
+      "task": "วิเคราะห์ Database Corruption",
+      "difficulty": 5,
+      "frequency": "รายเดือน",
+      "note": "Data Recovery"
+    },
+    {
+      "category": "Troubleshooting & Support",
+      "task": "แก้ไขปัญหา Connectivity",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "Connection Issues"
+    },
+    {
+      "category": "Troubleshooting & Support",
+      "task": "จัดการ Lock และ Deadlock",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "Concurrency Issues"
+    },
+    {
+      "category": "Troubleshooting & Support",
+      "task": "แก้ไขปัญหา Replication",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Replication Issues"
+    },
+    {
+      "category": "Troubleshooting & Support", 
+      "task": "สนับสนุน Development Teams",
+      "difficulty": 3,
+      "frequency": "รายวัน",
+      "note": "Developer Support"
+    }
+  ]
+}

@@ -1,0 +1,568 @@
+{
+  "position": "Full Stack Developer",
+  "overview": "Professional responsible for developing both frontend and backend components of web applications, managing databases, APIs, and ensuring seamless integration across the entire technology stack",
+  "department": "Software Development",
+  "level": "Mid-Senior",
+  "requiredSkills": ["JavaScript", "React/Vue/Angular", "Node.js", "Python/PHP/Java", "SQL/NoSQL", "Git", "REST APIs"],
+  "categories": [
+    {
+      "name": "Frontend Development",
+      "description": "Develop user interfaces and client-side applications",
+      "icon": "🎨",
+      "responsibilities": [
+        "พัฒนา User Interface ด้วย HTML5, CSS3, JavaScript",
+        "สร้าง Single Page Applications (SPA) ด้วย React/Vue/Angular",
+        "ทำ Responsive Web Design และ Mobile-First Development",
+        "จัดการ State Management (Redux, Vuex, NgRx)",
+        "ติดตั้งและใช้งาน CSS Frameworks (Bootstrap, Tailwind)",
+        "พัฒนา Progressive Web Apps (PWA)"
+      ]
+    },
+    {
+      "name": "Backend Development",
+      "description": "Develop server-side applications and business logic",
+      "icon": "⚙️",
+      "responsibilities": [
+        "พัฒนา RESTful APIs ด้วย Node.js/Express",
+        "สร้าง Backend Services ด้วย Python (Django/Flask)",
+        "พัฒนา Web Applications ด้วย PHP (Laravel/CodeIgniter)",
+        "สร้าง Microservices Architecture",
+        "จัดการ Authentication และ Authorization (JWT, OAuth)",
+        "ติดตั้งและใช้งาน Message Queues (Redis, RabbitMQ)"
+      ]
+    },
+    {
+      "name": "Database Design & Management",
+      "description": "Design and manage databases for applications",
+      "icon": "🗄️",
+      "responsibilities": [
+        "ออกแบบ Database Schema และ ERD",
+        "พัฒนา SQL Queries และ Stored Procedures",
+        "จัดการ NoSQL Databases (MongoDB, Firebase)",
+        "ทำ Database Migration และ Seeding",
+        "ใช้งาน ORM/ODM (Sequelize, Mongoose, Eloquent)",
+        "ทำ Database Performance Optimization"
+      ]
+    },
+    {
+      "name": "API Development & Integration",
+      "description": "Develop and integrate APIs and web services",
+      "icon": "🔌",
+      "responsibilities": [
+        "สร้าง RESTful Web Services",
+        "พัฒนา GraphQL APIs",
+        "ทำ Third-party API Integration",
+        "สร้าง API Documentation (Swagger/OpenAPI)",
+        "จัดการ API Versioning และ Rate Limiting",
+        "ติดตั้งและใช้งาน Webhooks"
+      ]
+    },
+    {
+      "name": "Version Control & Collaboration",
+      "description": "Manage code versioning and team collaboration",
+      "icon": "📋",
+      "responsibilities": [
+        "ใช้งาน Git สำหรับ Version Control",
+        "จัดการ Git Branching Strategies (GitFlow, Feature Branch)",
+        "ทำ Code Review และ Pull Request Management",
+        "ใช้งาน GitHub/GitLab/Bitbucket",
+        "จัดการ Project Management Tools (Jira, Trello)",
+        "ทำ Documentation และ Code Comments"
+      ]
+    },
+    {
+      "name": "Testing & Quality Assurance",
+      "description": "Implement testing strategies and ensure code quality",
+      "icon": "✅",
+      "responsibilities": [
+        "เขียน Unit Tests (Jest, Mocha, PHPUnit)",
+        "ทำ Integration Testing",
+        "สร้าง End-to-End Tests (Cypress, Selenium)",
+        "ทำ Code Quality Analysis (ESLint, SonarQube)",
+        "ใช้งาน Test-Driven Development (TDD)",
+        "ทำ Performance Testing และ Load Testing"
+      ]
+    },
+    {
+      "name": "DevOps & Deployment",
+      "description": "Deploy and manage applications in production",
+      "icon": "🚀",
+      "responsibilities": [
+        "ติดตั้งและจัดการ Web Servers (Apache, Nginx)",
+        "ทำ Application Deployment (PM2, Docker)",
+        "จัดการ Cloud Services (AWS, Azure, GCP)",
+        "ติดตั้งและใช้งาน CI/CD Pipelines",
+        "จัดการ Environment Configuration",
+        "ทำ Application Monitoring และ Logging"
+      ]
+    },
+    {
+      "name": "Security & Performance",
+      "description": "Implement security measures and optimize performance",
+      "icon": "🔒",
+      "responsibilities": [
+        "ทำ Web Application Security (OWASP Top 10)",
+        "จัดการ Data Validation และ Sanitization",
+        "ติดตั้ง SSL/HTTPS และ Security Headers",
+        "ทำ Code Optimization และ Performance Tuning",
+        "จัดการ Caching Strategies",
+        "ทำ Security Audit และ Vulnerability Assessment"
+      ]
+    },
+    {
+      "name": "Mobile Development",
+      "description": "Develop mobile applications and responsive solutions",
+      "icon": "📱",
+      "responsibilities": [
+        "พัฒนา Mobile Apps ด้วย React Native/Flutter",
+        "สร้าง Hybrid Mobile Applications",
+        "ทำ Mobile-First Responsive Design",
+        "จัดการ Mobile App Deployment",
+        "ติดตั้งและใช้งาน Push Notifications",
+        "ทำ Mobile Performance Optimization"
+      ]
+    },
+    {
+      "name": "Project Architecture & Planning",
+      "description": "Plan and architect software projects",
+      "icon": "🏗️",
+      "responsibilities": [
+        "ออกแบบ Software Architecture และ System Design",
+        "วางแผน Project Timeline และ Sprint Planning",
+        "ทำ Technical Documentation และ Specifications",
+        "เลือกและประเมิน Technology Stack",
+        "ทำ Code Architecture และ Design Patterns",
+        "จัดการ Technical Debt และ Refactoring"
+      ]
+    }
+  ],
+  "scorecard": [
+    {
+      "category": "Frontend Development",
+      "task": "พัฒนา HTML5/CSS3 Layouts",
+      "difficulty": 2,
+      "frequency": "รายวัน",
+      "note": "Basic Web Development"
+    },
+    {
+      "category": "Frontend Development",
+      "task": "สร้าง React Components",
+      "difficulty": 3,
+      "frequency": "รายวัน",
+      "note": "Component-based Development"
+    },
+    {
+      "category": "Frontend Development",
+      "task": "จัดการ State Management",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "Redux/Context API"
+    },
+    {
+      "category": "Frontend Development",
+      "task": "ทำ Responsive Design",
+      "difficulty": 3,
+      "frequency": "รายวัน",
+      "note": "Mobile-First Approach"
+    },
+    {
+      "category": "Frontend Development",
+      "task": "พัฒนา Vue.js Applications",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "Vue Framework"
+    },
+    {
+      "category": "Frontend Development",
+      "task": "สร้าง Angular Applications",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "TypeScript Framework"
+    },
+    {
+      "category": "Frontend Development",
+      "task": "พัฒนา Progressive Web Apps",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "PWA Development"
+    },
+    {
+      "category": "Frontend Development",
+      "task": "ใช้งาน CSS Frameworks",
+      "difficulty": 2,
+      "frequency": "รายวัน",
+      "note": "Bootstrap/Tailwind"
+    },
+    {
+      "category": "Backend Development",
+      "task": "พัฒนา Node.js APIs",
+      "difficulty": 3,
+      "frequency": "รายวัน",
+      "note": "Express.js Framework"
+    },
+    {
+      "category": "Backend Development",
+      "task": "สร้าง Python Web Services",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "Django/Flask"
+    },
+    {
+      "category": "Backend Development",
+      "task": "พัฒนา PHP Applications",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "Laravel/CodeIgniter"
+    },
+    {
+      "category": "Backend Development",
+      "task": "สร้าง Microservices",
+      "difficulty": 5,
+      "frequency": "รายเดือน",
+      "note": "Distributed Architecture"
+    },
+    {
+      "category": "Backend Development",
+      "task": "จัดการ Authentication",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "JWT/OAuth Implementation"
+    },
+    {
+      "category": "Backend Development",
+      "task": "ใช้งาน Message Queues",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Redis/RabbitMQ"
+    },
+    {
+      "category": "Database Design & Management",
+      "task": "ออกแบบ Database Schema",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "ERD Design"
+    },
+    {
+      "category": "Database Design & Management",
+      "task": "เขียน SQL Queries",
+      "difficulty": 3,
+      "frequency": "รายวัน",
+      "note": "Complex Queries"
+    },
+    {
+      "category": "Database Design & Management",
+      "task": "จัดการ MongoDB",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "NoSQL Database"
+    },
+    {
+      "category": "Database Design & Management",
+      "task": "ทำ Database Migration",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "Schema Changes"
+    },
+    {
+      "category": "Database Design & Management",
+      "task": "ใช้งาน ORM/ODM",
+      "difficulty": 3,
+      "frequency": "รายวัน",
+      "note": "Object-Relational Mapping"
+    },
+    {
+      "category": "Database Design & Management",
+      "task": "ทำ Database Optimization",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Performance Tuning"
+    },
+    {
+      "category": "API Development & Integration",
+      "task": "สร้าง RESTful APIs",
+      "difficulty": 3,
+      "frequency": "รายวัน",
+      "note": "REST Architecture"
+    },
+    {
+      "category": "API Development & Integration",
+      "task": "พัฒนา GraphQL APIs",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "Query Language"
+    },
+    {
+      "category": "API Development & Integration",
+      "task": "ทำ Third-party Integration",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "External APIs"
+    },
+    {
+      "category": "API Development & Integration",
+      "task": "สร้าง API Documentation",
+      "difficulty": 2,
+      "frequency": "รายสัปดาห์",
+      "note": "Swagger/OpenAPI"
+    },
+    {
+      "category": "API Development & Integration",
+      "task": "จัดการ API Versioning",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Version Management"
+    },
+    {
+      "category": "API Development & Integration",
+      "task": "ติดตั้ง Webhooks",
+      "difficulty": 3,
+      "frequency": "รายเดือน",
+      "note": "Event-driven Architecture"
+    },
+    {
+      "category": "Version Control & Collaboration",
+      "task": "ใช้งาน Git Commands",
+      "difficulty": 2,
+      "frequency": "รายวัน",
+      "note": "Basic Git Operations"
+    },
+    {
+      "category": "Version Control & Collaboration",
+      "task": "จัดการ Git Branching",
+      "difficulty": 3,
+      "frequency": "รายวัน",
+      "note": "Branch Management"
+    },
+    {
+      "category": "Version Control & Collaboration",
+      "task": "ทำ Code Review",
+      "difficulty": 3,
+      "frequency": "รายวัน",
+      "note": "Peer Review Process"
+    },
+    {
+      "category": "Version Control & Collaboration",
+      "task": "จัดการ Pull Requests",
+      "difficulty": 2,
+      "frequency": "รายวัน",
+      "note": "GitHub/GitLab Workflow"
+    },
+    {
+      "category": "Version Control & Collaboration",
+      "task": "ใช้งาน Project Management Tools",
+      "difficulty": 2,
+      "frequency": "รายวัน",
+      "note": "Jira/Trello"
+    },
+    {
+      "category": "Version Control & Collaboration",
+      "task": "เขียน Technical Documentation",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "Code Documentation"
+    },
+    {
+      "category": "Testing & Quality Assurance",
+      "task": "เขียน Unit Tests",
+      "difficulty": 3,
+      "frequency": "รายวัน",
+      "note": "Jest/Mocha Testing"
+    },
+    {
+      "category": "Testing & Quality Assurance",
+      "task": "ทำ Integration Testing",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "API Testing"
+    },
+    {
+      "category": "Testing & Quality Assurance",
+      "task": "สร้าง E2E Tests",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Cypress/Selenium"
+    },
+    {
+      "category": "Testing & Quality Assurance",
+      "task": "ทำ Code Quality Analysis",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "ESLint/SonarQube"
+    },
+    {
+      "category": "Testing & Quality Assurance",
+      "task": "ใช้งาน TDD Approach",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "Test-Driven Development"
+    },
+    {
+      "category": "Testing & Quality Assurance",
+      "task": "ทำ Performance Testing",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Load Testing"
+    },
+    {
+      "category": "DevOps & Deployment",
+      "task": "จัดการ Web Server Configuration",
+      "difficulty": 3,
+      "frequency": "รายเดือน",
+      "note": "Apache/Nginx"
+    },
+    {
+      "category": "DevOps & Deployment",
+      "task": "ทำ Application Deployment",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "Production Deployment"
+    },
+    {
+      "category": "DevOps & Deployment",
+      "task": "ใช้งาน Docker Containers",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "Containerization"
+    },
+    {
+      "category": "DevOps & Deployment",
+      "task": "จัดการ Cloud Services",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "AWS/Azure/GCP"
+    },
+    {
+      "category": "DevOps & Deployment",
+      "task": "ติดตั้ง CI/CD Pipelines",
+      "difficulty": 5,
+      "frequency": "รายเดือน",
+      "note": "Continuous Integration"
+    },
+    {
+      "category": "DevOps & Deployment",
+      "task": "ทำ Application Monitoring",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "Logging & Monitoring"
+    },
+    {
+      "category": "Security & Performance",
+      "task": "ทำ Web Security Implementation",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "OWASP Guidelines"
+    },
+    {
+      "category": "Security & Performance",
+      "task": "จัดการ Data Validation",
+      "difficulty": 3,
+      "frequency": "รายวัน",
+      "note": "Input Sanitization"
+    },
+    {
+      "category": "Security & Performance",
+      "task": "ติดตั้ง SSL/HTTPS",
+      "difficulty": 3,
+      "frequency": "รายเดือน",
+      "note": "Security Configuration"
+    },
+    {
+      "category": "Security & Performance",
+      "task": "ทำ Code Optimization",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "Performance Tuning"
+    },
+    {
+      "category": "Security & Performance",
+      "task": "จัดการ Caching Strategies",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Performance Optimization"
+    },
+    {
+      "category": "Security & Performance",
+      "task": "ทำ Security Audit",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Vulnerability Assessment"
+    },
+    {
+      "category": "Mobile Development",
+      "task": "พัฒนา React Native Apps",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Cross-platform Mobile"
+    },
+    {
+      "category": "Mobile Development",
+      "task": "สร้าง Flutter Applications",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Dart Framework"
+    },
+    {
+      "category": "Mobile Development",
+      "task": "ทำ Mobile Responsive Design",
+      "difficulty": 3,
+      "frequency": "รายวัน",
+      "note": "Mobile-First Design"
+    },
+    {
+      "category": "Mobile Development",
+      "task": "จัดการ App Store Deployment",
+      "difficulty": 3,
+      "frequency": "รายเดือน",
+      "note": "Mobile App Publishing"
+    },
+    {
+      "category": "Mobile Development",
+      "task": "ติดตั้ง Push Notifications",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Mobile Notifications"
+    },
+    {
+      "category": "Project Architecture & Planning",
+      "task": "ออกแบบ Software Architecture",
+      "difficulty": 5,
+      "frequency": "รายเดือน",
+      "note": "System Design"
+    },
+    {
+      "category": "Project Architecture & Planning",
+      "task": "วางแผน Sprint Planning",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "Agile Planning"
+    },
+    {
+      "category": "Project Architecture & Planning",
+      "task": "เขียน Technical Specifications",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Technical Documentation"
+    },
+    {
+      "category": "Project Architecture & Planning",
+      "task": "เลือก Technology Stack",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Tech Stack Decision"
+    },
+    {
+      "category": "Project Architecture & Planning",
+      "task": "ทำ Code Refactoring",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Code Improvement"
+    },
+    {
+      "category": "Project Architecture & Planning",
+      "task": "จัดการ Technical Debt",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Code Maintenance"
+    }
+  ]
+}

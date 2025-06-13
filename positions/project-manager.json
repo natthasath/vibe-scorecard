@@ -1,0 +1,491 @@
+{
+  "position": "Project Manager",
+  "overview": "Professional responsible for planning, executing, monitoring, and closing projects while ensuring they are completed on time, within budget, and meet quality standards and stakeholder requirements",
+  "department": "Project Management Office",
+  "level": "Mid-Senior",
+  "requiredSkills": ["PMP", "Agile/Scrum", "Microsoft Project", "Risk Management", "Stakeholder Management", "Leadership"],
+  "categories": [
+    {
+      "name": "Project Planning & Initiation",
+      "description": "Plan and initiate projects with clear scope and objectives",
+      "icon": "📋",
+      "responsibilities": [
+        "จัดทำ Project Charter และ Business Case",
+        "กำหนด Project Scope และ Work Breakdown Structure (WBS)",
+        "วางแผน Project Timeline และ Milestones",
+        "จัดทำ Project Management Plan",
+        "ทำ Stakeholder Analysis และ Identification",
+        "กำหนด Project Success Criteria และ KPIs"
+      ]
+    },
+    {
+      "name": "Resource Management",
+      "description": "Manage project resources including human resources, budget, and materials",
+      "icon": "👥",
+      "responsibilities": [
+        "วางแผนและจัดสรร Human Resources",
+        "จัดการ Resource Allocation และ Utilization",
+        "ประสานงานกับ Functional Managers",
+        "จัดการ Project Team Structure",
+        "ทำ Resource Leveling และ Optimization",
+        "จัดการ Vendor และ External Resources"
+      ]
+    },
+    {
+      "name": "Risk Management",
+      "description": "Identify, analyze, and mitigate project risks",
+      "icon": "⚠️",
+      "responsibilities": [
+        "ทำ Risk Identification และ Assessment",
+        "สร้าง Risk Register และ Risk Matrix",
+        "พัฒนา Risk Mitigation Plans",
+        "ติดตาม Risk Monitoring และ Control",
+        "จัดการ Issues และ Problem Resolution",
+        "ทำ Contingency Planning"
+      ]
+    },
+    {
+      "name": "Communication & Stakeholder Management",
+      "description": "Manage stakeholder relationships and project communications",
+      "icon": "💬",
+      "responsibilities": [
+        "พัฒนา Communication Management Plan",
+        "จัดการ Stakeholder Engagement",
+        "จัด Project Meetings และ Reviews",
+        "ทำ Progress Reporting และ Status Updates",
+        "จัดการ Change Requests และ Approvals",
+        "ประสานงานกับ Cross-functional Teams"
+      ]
+    },
+    {
+      "name": "Quality Management",
+      "description": "Ensure project deliverables meet quality standards",
+      "icon": "✅",
+      "responsibilities": [
+        "พัฒนา Quality Management Plan",
+        "กำหนด Quality Standards และ Acceptance Criteria",
+        "ทำ Quality Assurance (QA) Activities",
+        "จัดการ Quality Control (QC) Processes",
+        "ทำ Testing และ Validation",
+        "จัดการ Defect Tracking และ Resolution"
+      ]
+    },
+    {
+      "name": "Budget & Cost Management",
+      "description": "Manage project budget and control costs",
+      "icon": "💰",
+      "responsibilities": [
+        "จัดทำ Project Budget และ Cost Estimates",
+        "ทำ Cost Control และ Budget Tracking",
+        "จัดการ Purchase Orders และ Procurement",
+        "ทำ Earned Value Management (EVM)",
+        "วิเคราะห์ Cost Variance และ Budget Performance",
+        "จัดทำ Financial Reports และ Forecasting"
+      ]
+    },
+    {
+      "name": "Time Management & Scheduling",
+      "description": "Manage project timelines and schedules",
+      "icon": "⏰",
+      "responsibilities": [
+        "สร้าง Project Schedule และ Critical Path",
+        "ทำ Task Scheduling และ Dependencies",
+        "ติดตาม Progress และ Schedule Performance",
+        "จัดการ Schedule Changes และ Adjustments",
+        "ทำ Resource Scheduling และ Calendar Management",
+        "วิเคราะห์ Schedule Variance และ Recovery Plans"
+      ]
+    },
+    {
+      "name": "Team Leadership & Development",
+      "description": "Lead and develop project team members",
+      "icon": "🎯",
+      "responsibilities": [
+        "สร้าง High-Performance Teams",
+        "ทำ Team Building และ Motivation",
+        "จัดการ Conflict Resolution",
+        "ให้ Coaching และ Mentoring",
+        "ทำ Performance Management",
+        "พัฒนา Team Skills และ Capabilities"
+      ]
+    },
+    {
+      "name": "Process Improvement & Methodology",
+      "description": "Implement and improve project management processes",
+      "icon": "🔄",
+      "responsibilities": [
+        "ติดตั้งและใช้งาน PM Methodologies (Agile, Waterfall, Hybrid)",
+        "ทำ Process Standardization และ Best Practices",
+        "จัดการ Change Management",
+        "ทำ Lessons Learned และ Knowledge Management",
+        "พัฒนา PM Tools และ Templates",
+        "ติดตั้งและใช้งาน Project Management Software"
+      ]
+    },
+    {
+      "name": "Reporting & Documentation",
+      "description": "Create comprehensive project documentation and reports",
+      "icon": "📊",
+      "responsibilities": [
+        "จัดทำ Project Status Reports",
+        "สร้าง Executive Dashboards",
+        "ทำ Project Documentation และ Records",
+        "จัดทำ Project Closure Reports",
+        "ทำ Performance Metrics และ Analytics",
+        "สร้าง Project Presentations"
+      ]
+    }
+  ],
+  "scorecard": [
+    {
+      "category": "Project Planning & Initiation",
+      "task": "จัดทำ Project Charter",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Project Authorization Document"
+    },
+    {
+      "category": "Project Planning & Initiation",
+      "task": "กำหนด Project Scope",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Scope Statement & WBS"
+    },
+    {
+      "category": "Project Planning & Initiation",
+      "task": "วางแผน Project Timeline",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "Schedule Development"
+    },
+    {
+      "category": "Project Planning & Initiation",
+      "task": "ทำ Stakeholder Analysis",
+      "difficulty": 3,
+      "frequency": "รายเดือน",
+      "note": "Stakeholder Identification"
+    },
+    {
+      "category": "Project Planning & Initiation",
+      "task": "จัดทำ Project Management Plan",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Comprehensive PM Plan"
+    },
+    {
+      "category": "Resource Management",
+      "task": "วางแผน Human Resources",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "Resource Planning"
+    },
+    {
+      "category": "Resource Management",
+      "task": "จัดสรร Project Resources",
+      "difficulty": 3,
+      "frequency": "รายวัน",
+      "note": "Resource Allocation"
+    },
+    {
+      "category": "Resource Management",
+      "task": "ประสานงานกับ Functional Managers",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "Matrix Management"
+    },
+    {
+      "category": "Resource Management",
+      "task": "จัดการ Team Structure",
+      "difficulty": 3,
+      "frequency": "รายเดือน",
+      "note": "Team Organization"
+    },
+    {
+      "category": "Resource Management",
+      "task": "ทำ Resource Optimization",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "Resource Leveling"
+    },
+    {
+      "category": "Risk Management",
+      "task": "ทำ Risk Identification",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "Risk Assessment"
+    },
+    {
+      "category": "Risk Management",
+      "task": "สร้าง Risk Register",
+      "difficulty": 3,
+      "frequency": "รายเดือน",
+      "note": "Risk Documentation"
+    },
+    {
+      "category": "Risk Management",
+      "task": "พัฒนา Risk Mitigation Plans",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "Risk Response Planning"
+    },
+    {
+      "category": "Risk Management",
+      "task": "ติดตาม Risk Monitoring",
+      "difficulty": 3,
+      "frequency": "รายวัน",
+      "note": "Risk Control"
+    },
+    {
+      "category": "Risk Management",
+      "task": "จัดการ Issues Resolution",
+      "difficulty": 4,
+      "frequency": "รายวัน",
+      "note": "Problem Solving"
+    },
+    {
+      "category": "Communication & Stakeholder Management",
+      "task": "พัฒนา Communication Plan",
+      "difficulty": 3,
+      "frequency": "รายเดือน",
+      "note": "Communication Strategy"
+    },
+    {
+      "category": "Communication & Stakeholder Management",
+      "task": "จัดการ Stakeholder Engagement",
+      "difficulty": 4,
+      "frequency": "รายวัน",
+      "note": "Stakeholder Relations"
+    },
+    {
+      "category": "Communication & Stakeholder Management",
+      "task": "จัด Project Meetings",
+      "difficulty": 2,
+      "frequency": "รายวัน",
+      "note": "Meeting Facilitation"
+    },
+    {
+      "category": "Communication & Stakeholder Management",
+      "task": "ทำ Progress Reporting",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "Status Updates"
+    },
+    {
+      "category": "Communication & Stakeholder Management",
+      "task": "จัดการ Change Requests",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "Change Control"
+    },
+    {
+      "category": "Quality Management",
+      "task": "พัฒนา Quality Plan",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Quality Planning"
+    },
+    {
+      "category": "Quality Management",
+      "task": "กำหนด Quality Standards",
+      "difficulty": 3,
+      "frequency": "รายเดือน",
+      "note": "Acceptance Criteria"
+    },
+    {
+      "category": "Quality Management",
+      "task": "ทำ Quality Assurance",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "QA Activities"
+    },
+    {
+      "category": "Quality Management",
+      "task": "จัดการ Quality Control",
+      "difficulty": 3,
+      "frequency": "รายวัน",
+      "note": "QC Processes"
+    },
+    {
+      "category": "Quality Management",
+      "task": "ทำ Testing และ Validation",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "Quality Validation"
+    },
+    {
+      "category": "Budget & Cost Management",
+      "task": "จัดทำ Project Budget",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Budget Planning"
+    },
+    {
+      "category": "Budget & Cost Management",
+      "task": "ทำ Cost Control",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "Budget Tracking"
+    },
+    {
+      "category": "Budget & Cost Management",
+      "task": "จัดการ Procurement",
+      "difficulty": 3,
+      "frequency": "รายเดือน",
+      "note": "Purchase Management"
+    },
+    {
+      "category": "Budget & Cost Management",
+      "task": "ทำ Earned Value Management",
+      "difficulty": 5,
+      "frequency": "รายสัปดาห์",
+      "note": "EVM Analysis"
+    },
+    {
+      "category": "Budget & Cost Management",
+      "task": "วิเคราะห์ Cost Variance",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "Budget Performance"
+    },
+    {
+      "category": "Time Management & Scheduling",
+      "task": "สร้าง Project Schedule",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Schedule Development"
+    },
+    {
+      "category": "Time Management & Scheduling",
+      "task": "ทำ Task Scheduling",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "Work Scheduling"
+    },
+    {
+      "category": "Time Management & Scheduling",
+      "task": "ติดตาม Schedule Performance",
+      "difficulty": 3,
+      "frequency": "รายวัน",
+      "note": "Progress Tracking"
+    },
+    {
+      "category": "Time Management & Scheduling",
+      "task": "จัดการ Schedule Changes",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "Schedule Control"
+    },
+    {
+      "category": "Time Management & Scheduling",
+      "task": "วิเคราะห์ Critical Path",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "CPM Analysis"
+    },
+    {
+      "category": "Team Leadership & Development",
+      "task": "สร้าง High-Performance Teams",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Team Building"
+    },
+    {
+      "category": "Team Leadership & Development",
+      "task": "ทำ Team Motivation",
+      "difficulty": 3,
+      "frequency": "รายวัน",
+      "note": "Team Engagement"
+    },
+    {
+      "category": "Team Leadership & Development",
+      "task": "จัดการ Conflict Resolution",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "Conflict Management"
+    },
+    {
+      "category": "Team Leadership & Development",
+      "task": "ให้ Coaching และ Mentoring",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "Team Development"
+    },
+    {
+      "category": "Team Leadership & Development",
+      "task": "ทำ Performance Management",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Team Performance"
+    },
+    {
+      "category": "Process Improvement & Methodology",
+      "task": "ติดตั้ง PM Methodologies",
+      "difficulty": 4,
+      "frequency": "รายปี",
+      "note": "Agile/Waterfall/Hybrid"
+    },
+    {
+      "category": "Process Improvement & Methodology",
+      "task": "ทำ Process Standardization",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Best Practices"
+    },
+    {
+      "category": "Process Improvement & Methodology",
+      "task": "จัดการ Change Management",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "Organizational Change"
+    },
+    {
+      "category": "Process Improvement & Methodology",
+      "task": "ทำ Lessons Learned",
+      "difficulty": 3,
+      "frequency": "รายเดือน",
+      "note": "Knowledge Capture"
+    },
+    {
+      "category": "Process Improvement & Methodology",
+      "task": "พัฒนา PM Tools",
+      "difficulty": 3,
+      "frequency": "รายเดือน",
+      "note": "Templates & Tools"
+    },
+    {
+      "category": "Reporting & Documentation",
+      "task": "จัดทำ Status Reports",
+      "difficulty": 2,
+      "frequency": "รายสัปดาห์",
+      "note": "Progress Reporting"
+    },
+    {
+      "category": "Reporting & Documentation",
+      "task": "สร้าง Executive Dashboards",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Executive Reporting"
+    },
+    {
+      "category": "Reporting & Documentation",
+      "task": "ทำ Project Documentation",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "Document Management"
+    },
+    {
+      "category": "Reporting & Documentation",
+      "task": "จัดทำ Closure Reports",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Project Closure"
+    },
+    {
+      "category": "Reporting & Documentation",
+      "task": "ทำ Performance Analytics",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "Metrics Analysis"
+    }
+  ]
+}
