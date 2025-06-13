@@ -1,7 +1,13 @@
 // Global variables
-let jobPositionsData = {};
+let jobPositionsData = { positions: [] };
 let currentPosition = null;
 let filteredData = [];
+
+// JSON files to load (update this array when adding new position files)
+const JSON_FILES = [
+    'oracle-dba.json',
+    'linux-administrator.json'
+];
 
 // DOM Elements
 const positionSelect = document.getElementById('positionSelect');
@@ -12,100 +18,148 @@ const mainContent = document.getElementById('mainContent');
 // Initialize application
 document.addEventListener('DOMContentLoaded', function() {
     setupEventListeners();
-    loadData();
+    loadAllJsonFiles();
     loadSettings();
 });
 
-// Load data from JSON file
-async function loadData() {
+// Load all JSON files from the folder
+async function loadAllJsonFiles() {
     showLoading(true);
+    
     try {
-        const response = await fetch('job-positions.json');
-        const data = await response.json();
-        jobPositionsData = data;
+        console.log('Loading JSON files:', JSON_FILES);
         
+        // Load all JSON files concurrently
+        const promises = JSON_FILES.map(async (filename) => {
+            try {
+                console.log(`Loading ${filename}...`);
+                const response = await fetch(filename);
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                
+                const data = await response.json();
+                console.log(`✅ Successfully loaded ${filename}:`, data);
+                return { filename, data, success: true };
+            } catch (error) {
+                console.error(`❌ Failed to load ${filename}:`, error);
+                return { filename, error: error.message, success: false };
+            }
+        });
+        
+        const results = await Promise.allSettled(promises);
+        
+        // Process results
+        const loadedPositions = [];
+        const failedFiles = [];
+        
+        results.forEach((result, index) => {
+            if (result.status === 'fulfilled' && result.value.success) {
+                const { filename, data } = result.value;
+                
+                // Handle different JSON structures
+                if (data.positions && Array.isArray(data.positions)) {
+                    // Multi-position format
+                    loadedPositions.push(...data.positions);
+                    console.log(`📂 Loaded ${data.positions.length} positions from ${filename}`);
+                } else if (data.position || data.title) {
+                    // Single position format - convert to standard format
+                    const position = convertSinglePositionFormat(data, filename);
+                    if (position) {
+                        loadedPositions.push(position);
+                        console.log(`📄 Converted single position from ${filename}`);
+                    }
+                } else {
+                    console.warn(`⚠️ Unknown format in ${filename}:`, data);
+                }
+            } else {
+                const filename = JSON_FILES[index];
+                const error = result.reason || result.value?.error || 'Unknown error';
+                failedFiles.push({ filename, error });
+            }
+        });
+        
+        // Update global data
+        jobPositionsData = {
+            version: "1.0",
+            lastUpdated: new Date().toISOString().split('T')[0],
+            description: "Multi-position job scorecard system loaded from multiple JSON files",
+            positions: loadedPositions,
+            loadedFiles: JSON_FILES.filter(f => !failedFiles.some(ff => ff.filename === f)),
+            failedFiles: failedFiles
+        };
+        
+        console.log('📊 Final loaded data:', jobPositionsData);
+        
+        // Show loading results
+        if (failedFiles.length > 0) {
+            console.warn('⚠️ Some files failed to load:', failedFiles);
+            showLoadingMessage(`โหลดสำเร็จ ${loadedPositions.length} ตำแหน่ง, ไม่สามารถโหลด ${failedFiles.length} ไฟล์: ${failedFiles.map(f => f.filename).join(', ')}`);
+        } else {
+            console.log('✅ All files loaded successfully');
+        }
+        
+        // Initialize UI
         populatePositionSelector();
         updateOverallStats();
         showLoading(false);
         
         // Auto-select first position if available
-        if (data.positions && data.positions.length > 0) {
-            selectPosition(data.positions[0].id);
+        if (loadedPositions.length > 0) {
+            selectPosition(loadedPositions[0].id);
+        } else {
+            showLoadingMessage('ไม่พบข้อมูลตำแหน่งงานที่ถูกต้อง กรุณาตรวจสอบไฟล์ JSON');
         }
+        
     } catch (error) {
-        console.error('Error loading data:', error);
-        loadFallbackData();
+        console.error('💥 Critical error loading JSON files:', error);
+        showLoadingMessage(`เกิดข้อผิดพลาดในการโหลดข้อมูล: ${error.message}`);
+        showLoading(false);
     }
 }
 
-// Fallback data structure
-function loadFallbackData() {
-    jobPositionsData = {
-        "version": "1.0",
-        "lastUpdated": "2025-06-12",
-        "positions": [
-            {
-                "id": "oracle-dba",
-                "title": "Oracle Database Administrator",
-                "description": "Professional responsible for managing, maintaining, and optimizing Oracle Database systems",
-                "department": "IT Infrastructure",
-                "level": "Senior",
-                "categories": [
-                    {
-                        "name": "Database Installation & Configuration",
-                        "description": "Installation and setup of Oracle Database software and environments",
-                        "icon": "🔧",
-                        "responsibilities": [
-                            "ติดตั้งและกำหนดค่า Oracle Database Software",
-                            "สร้างและกำหนดค่า Database Instance",
-                            "ติดตั้งและกำหนดค่า Oracle Grid Infrastructure",
-                            "กำหนดค่า Oracle Net Services",
-                            "ติดตั้งและกำหนดค่า Oracle Clusterware",
-                            "กำหนดค่า Memory Management (SGA/PGA)"
-                        ]
-                    },
-                    {
-                        "name": "Performance Tuning & Optimization",
-                        "description": "Analyze and optimize database performance",
-                        "icon": "📊",
-                        "responsibilities": [
-                            "วิเคราะห์และปรับปรุง SQL Performance",
-                            "ติดตามและวิเคราะห์ AWR Reports",
-                            "ปรับปรุง Database Parameters",
-                            "จัดการ Table Statistics และ Histograms",
-                            "ปรับปรุง Index Design และ Partitioning",
-                            "วิเคราะห์และปรับปรุง Wait Events"
-                        ]
-                    },
-                    {
-                        "name": "Security Management",
-                        "description": "Implement and maintain database security",
-                        "icon": "🔒",
-                        "responsibilities": [
-                            "จัดการ User Accounts และ Privileges",
-                            "กำหนดค่า Database Security Policies",
-                            "ติดตั้งและจัดการ SSL/TLS Encryption",
-                            "กำหนดค่า Database Auditing",
-                            "จัดการ Password Policies และ Profiles",
-                            "ติดตั้งและจัดการ Oracle Advanced Security"
-                        ]
-                    }
-                ],
-                "scorecard": [
-                    { "category": "Database Installation & Configuration", "task": "ติดตั้ง Oracle Database Software", "difficulty": 3, "frequency": "รายปี", "note": "Enterprise/Standard Edition" },
-                    { "category": "Database Installation & Configuration", "task": "สร้าง Database Instance ใหม่", "difficulty": 4, "frequency": "รายเดือน", "note": "DBCA หรือ Manual Script" },
-                    { "category": "Performance Tuning & Optimization", "task": "วิเคราะห์ AWR Reports", "difficulty": 4, "frequency": "รายวัน", "note": "Automatic Workload Repository" },
-                    { "category": "Performance Tuning & Optimization", "task": "ปรับปรุง SQL Statement Performance", "difficulty": 5, "frequency": "รายวัน", "note": "Query Optimization" },
-                    { "category": "Security Management", "task": "จัดการ Database User Accounts", "difficulty": 2, "frequency": "รายวัน", "note": "Create, Modify, Drop Users" },
-                    { "category": "Security Management", "task": "กำหนด User Roles และ Privileges", "difficulty": 3, "frequency": "รายวัน", "note": "Least Privilege Principle" }
-                ]
-            }
-        ]
-    };
-    
-    populatePositionSelector();
-    updateOverallStats();
-    showLoading(false);
+// Convert single position format to standard format
+function convertSinglePositionFormat(data, filename) {
+    try {
+        // Extract ID from filename (remove .json extension)
+        const id = filename.replace('.json', '');
+        
+        // Handle direct scorecard format (like original oracle-dba.json)
+        if (data.scorecard && Array.isArray(data.scorecard)) {
+            return {
+                id: id,
+                title: data.position || data.title || id.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()),
+                description: data.overview || data.description || `Professional ${data.position || id} position`,
+                department: data.department || "General",
+                level: data.level || "Mid-Senior",
+                requiredSkills: data.requiredSkills || [],
+                categories: data.categories || [],
+                scorecard: data.scorecard
+            };
+        }
+        
+        // Handle nested position format
+        if (data.position && typeof data.position === 'object') {
+            return {
+                id: id,
+                ...data.position
+            };
+        }
+        
+        return null;
+    } catch (error) {
+        console.error(`Error converting ${filename}:`, error);
+        return null;
+    }
+}
+
+// Show loading message
+function showLoadingMessage(message) {
+    const loadingText = loadingIndicator.querySelector('p');
+    if (loadingText) {
+        loadingText.textContent = message;
+    }
 }
 
 // Show/hide loading indicator
@@ -119,13 +173,17 @@ function showLoading(show) {
 function populatePositionSelector() {
     positionSelect.innerHTML = '<option value="">กรุณาเลือกตำแหน่ง...</option>';
     
-    if (jobPositionsData.positions) {
+    if (jobPositionsData.positions && jobPositionsData.positions.length > 0) {
         jobPositionsData.positions.forEach(position => {
             const option = document.createElement('option');
             option.value = position.id;
             option.textContent = `${position.title} (${position.department || 'General'})`;
             positionSelect.appendChild(option);
         });
+        
+        console.log(`📋 Added ${jobPositionsData.positions.length} positions to selector`);
+    } else {
+        console.warn('⚠️ No positions available for selector');
     }
     
     // Populate compare dropdowns
@@ -159,6 +217,8 @@ function updateOverallStats() {
     document.getElementById('totalPositions').textContent = totalPositions;
     document.getElementById('totalCategories').textContent = totalCategories;
     document.getElementById('totalAllTasks').textContent = totalTasks;
+    
+    console.log(`📊 Updated stats: ${totalPositions} positions, ${totalCategories} categories, ${totalTasks} tasks`);
 }
 
 // Select and display position
@@ -174,6 +234,9 @@ function selectPosition(positionId) {
         positionSelect.value = positionId;
         displayPosition(currentPosition);
         showMainContent();
+        console.log(`📍 Selected position: ${currentPosition.title}`);
+    } else {
+        console.error(`❌ Position not found: ${positionId}`);
     }
 }
 
@@ -223,7 +286,7 @@ function displayResponsibilities(categories) {
         categoryDiv.innerHTML = `
             <h3>${category.icon || '📋'} ${category.name}</h3>
             <ul>
-                ${category.responsibilities.map(resp => `<li>${resp}</li>`).join('')}
+                ${(category.responsibilities || []).map(resp => `<li>${resp}</li>`).join('')}
             </ul>
         `;
         
@@ -321,12 +384,14 @@ function exportData() {
     const dataStr = JSON.stringify(jobPositionsData, null, 2);
     const dataUri = 'data:application/json;charset=utf-8,'+ encodeURIComponent(dataStr);
     
-    const exportFileDefaultName = `job-positions-${new Date().toISOString().split('T')[0]}.json`;
+    const exportFileDefaultName = `job-positions-export-${new Date().toISOString().split('T')[0]}.json`;
     
     const linkElement = document.createElement('a');
     linkElement.setAttribute('href', dataUri);
     linkElement.setAttribute('download', exportFileDefaultName);
     linkElement.click();
+    
+    console.log('📤 Data exported:', exportFileDefaultName);
 }
 
 // Import functionality
@@ -348,8 +413,10 @@ function importData(event) {
             showNoPosition();
             
             alert('ข้อมูลได้รับการนำเข้าเรียบร้อยแล้ว!');
+            console.log('📥 Data imported successfully');
         } catch (error) {
             alert('ไม่สามารถอ่านไฟล์ JSON ได้: ' + error.message);
+            console.error('❌ Import failed:', error);
         }
     };
     reader.readAsText(file);

@@ -1,0 +1,299 @@
+{
+  "position": "Linux System Administrator",
+  "overview": "Professional responsible for managing, maintaining, and securing Linux-based server systems and infrastructure",
+  "department": "IT Infrastructure",
+  "level": "Mid-Senior",
+  "requiredSkills": ["Linux", "Shell Scripting", "Docker", "Kubernetes", "Monitoring"],
+  "categories": [
+    {
+      "name": "System Installation & Configuration",
+      "description": "Install and configure Linux systems and services",
+      "icon": "🖥️",
+      "responsibilities": [
+        "ติดตั้งและกำหนดค่า Linux Distribution (RHEL, Ubuntu, CentOS)",
+        "กำหนดค่า System Services และ Daemons",
+        "จัดการ Package Management (YUM, APT, DNF)",
+        "กำหนดค่า Network Interface และ Routing",
+        "ติดตั้งและกำหนดค่า Web Servers (Apache, Nginx)",
+        "กำหนดค่า Database Services (MySQL, PostgreSQL)"
+      ]
+    },
+    {
+      "name": "System Security & Hardening",
+      "description": "Implement security measures and system hardening",
+      "icon": "🔒",
+      "responsibilities": [
+        "กำหนดค่า Firewall (iptables, firewalld, ufw)",
+        "จัดการ User Accounts และ Permissions",
+        "ติดตั้งและกำหนดค่า SSH Security",
+        "ทำ System Hardening และ Security Baseline",
+        "จัดการ SSL/TLS Certificates",
+        "ติดตั้งและกำหนดค่า Security Tools (Fail2ban, AIDE)"
+      ]
+    },
+    {
+      "name": "System Performance & Monitoring",
+      "description": "Monitor system performance and optimize resources",
+      "icon": "📊",
+      "responsibilities": [
+        "ติดตาม System Performance (CPU, Memory, Disk, Network)",
+        "ติดตั้งและกำหนดค่า Monitoring Tools (Nagios, Zabbix, Prometheus)",
+        "วิเคราะห์ Log Files และ System Events",
+        "ปรับปรุง System Performance Tuning",
+        "จัดการ Resource Allocation และ Limits",
+        "สร้าง Performance Reports และ Dashboards"
+      ]
+    },
+    {
+      "name": "Backup & Recovery",
+      "description": "Implement backup strategies and disaster recovery procedures",
+      "icon": "💾",
+      "responsibilities": [
+        "วางแผนและดำเนินการ Backup Strategy",
+        "ติดตั้งและกำหนดค่า Backup Tools (rsync, tar, Bacula)",
+        "ทดสอบ System Recovery Procedures",
+        "จัดการ File System Snapshots",
+        "ทำ Database Backup และ Recovery",
+        "สร้าง Disaster Recovery Plan"
+      ]
+    },
+    {
+      "name": "Automation & Scripting",
+      "description": "Develop automation scripts and tools",
+      "icon": "🤖",
+      "responsibilities": [
+        "เขียน Shell Scripts สำหรับ System Administration",
+        "ติดตั้งและใช้งาน Configuration Management (Ansible, Puppet)",
+        "สร้าง Automation Scripts สำหรับ Routine Tasks",
+        "ทำ Infrastructure as Code",
+        "เขียน Monitoring และ Alerting Scripts",
+        "ใช้งาน Container Technologies (Docker, Podman)"
+      ]
+    },
+    {
+      "name": "Troubleshooting & Support",
+      "description": "Diagnose and resolve system issues",
+      "icon": "🔧",
+      "responsibilities": [
+        "แก้ไขปัญหา System Boot และ Startup Issues",
+        "วิเคราะห์และแก้ไข Performance Problems",
+        "แก้ไขปัญหา Network Connectivity",
+        "แก้ไขปัญหา File System และ Storage",
+        "แก้ไขปัญหา Service และ Application Issues",
+        "สนับสนุน End Users และ Development Teams"
+      ]
+    }
+  ],
+  "scorecard": [
+    {
+      "category": "System Installation & Configuration",
+      "task": "ติดตั้ง Linux Distribution",
+      "difficulty": 3,
+      "frequency": "รายเดือน",
+      "note": "RHEL, Ubuntu, CentOS"
+    },
+    {
+      "category": "System Installation & Configuration",
+      "task": "กำหนดค่า System Services",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "systemd, init.d"
+    },
+    {
+      "category": "System Installation & Configuration",
+      "task": "จัดการ Package Management",
+      "difficulty": 2,
+      "frequency": "รายวัน",
+      "note": "YUM, APT, DNF"
+    },
+    {
+      "category": "System Installation & Configuration",
+      "task": "กำหนดค่า Network Interface",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "Static/DHCP Configuration"
+    },
+    {
+      "category": "System Installation & Configuration",
+      "task": "ติดตั้ง Web Servers",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Apache, Nginx"
+    },
+    {
+      "category": "System Security & Hardening",
+      "task": "กำหนดค่า Firewall",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "iptables, firewalld"
+    },
+    {
+      "category": "System Security & Hardening",
+      "task": "จัดการ User Accounts",
+      "difficulty": 2,
+      "frequency": "รายวัน",
+      "note": "useradd, usermod, passwd"
+    },
+    {
+      "category": "System Security & Hardening",
+      "task": "กำหนดค่า SSH Security",
+      "difficulty": 3,
+      "frequency": "รายเดือน",
+      "note": "Key-based Authentication"
+    },
+    {
+      "category": "System Security & Hardening",
+      "task": "ทำ System Hardening",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "CIS Benchmarks"
+    },
+    {
+      "category": "System Security & Hardening",
+      "task": "จัดการ SSL Certificates",
+      "difficulty": 3,
+      "frequency": "รายเดือน",
+      "note": "Let's Encrypt, OpenSSL"
+    },
+    {
+      "category": "System Performance & Monitoring",
+      "task": "ติดตาม System Performance",
+      "difficulty": 3,
+      "frequency": "รายวัน",
+      "note": "top, htop, sar, iostat"
+    },
+    {
+      "category": "System Performance & Monitoring",
+      "task": "ติดตั้ง Monitoring Tools",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Nagios, Zabbix, Prometheus"
+    },
+    {
+      "category": "System Performance & Monitoring",
+      "task": "วิเคราะห์ Log Files",
+      "difficulty": 3,
+      "frequency": "รายวัน",
+      "note": "journalctl, tail, grep"
+    },
+    {
+      "category": "System Performance & Monitoring",
+      "task": "ปรับปรุง Performance Tuning",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "Kernel Parameters"
+    },
+    {
+      "category": "System Performance & Monitoring",
+      "task": "สร้าง Performance Reports",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "System Metrics"
+    },
+    {
+      "category": "Backup & Recovery",
+      "task": "วางแผน Backup Strategy",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Full/Incremental/Differential"
+    },
+    {
+      "category": "Backup & Recovery",
+      "task": "ดำเนินการ System Backup",
+      "difficulty": 3,
+      "frequency": "รายวัน",
+      "note": "rsync, tar, cpio"
+    },
+    {
+      "category": "Backup & Recovery",
+      "task": "ทดสอบ Recovery Procedures",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Disaster Recovery"
+    },
+    {
+      "category": "Backup & Recovery",
+      "task": "จัดการ File System Snapshots",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "LVM, Btrfs, ZFS"
+    },
+    {
+      "category": "Backup & Recovery",
+      "task": "ทำ Database Backup",
+      "difficulty": 4,
+      "frequency": "รายวัน",
+      "note": "mysqldump, pg_dump"
+    },
+    {
+      "category": "Automation & Scripting",
+      "task": "เขียน Shell Scripts",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "Bash, Python"
+    },
+    {
+      "category": "Automation & Scripting",
+      "task": "ใช้งาน Configuration Management",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Ansible, Puppet, Chef"
+    },
+    {
+      "category": "Automation & Scripting",
+      "task": "สร้าง Automation Scripts",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "Task Automation"
+    },
+    {
+      "category": "Automation & Scripting",
+      "task": "ทำ Infrastructure as Code",
+      "difficulty": 5,
+      "frequency": "รายเดือน",
+      "note": "Terraform, CloudFormation"
+    },
+    {
+      "category": "Automation & Scripting",
+      "task": "ใช้งาน Container Technologies",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "Docker, Podman, Kubernetes"
+    },
+    {
+      "category": "Troubleshooting & Support",
+      "task": "แก้ไขปัญหา System Boot",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "GRUB, systemd"
+    },
+    {
+      "category": "Troubleshooting & Support",
+      "task": "วิเคราะห์ Performance Problems",
+      "difficulty": 4,
+      "frequency": "รายวัน",
+      "note": "System Bottlenecks"
+    },
+    {
+      "category": "Troubleshooting & Support",
+      "task": "แก้ไขปัญหา Network",
+      "difficulty": 3,
+      "frequency": "รายวัน",
+      "note": "ping, traceroute, netstat"
+    },
+    {
+      "category": "Troubleshooting & Support",
+      "task": "แก้ไขปัญหา File System",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "fsck, mount, df"
+    },
+    {
+      "category": "Troubleshooting & Support",
+      "task": "สนับสนุน Users",
+      "difficulty": 2,
+      "frequency": "รายวัน",
+      "note": "Technical Support"
+    }
+  ]
+}

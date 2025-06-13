@@ -1,603 +1,502 @@
 {
-  "version": "1.0",
-  "lastUpdated": "2025-06-12",
-  "description": "Multi-position job scorecard system for career assessment and planning",
-  "positions": [
+  "id": "oracle-dba",
+  "title": "Oracle Database Administrator",
+  "description": "Professional responsible for managing, maintaining, and optimizing Oracle Database systems to ensure high availability, performance, and security",
+  "department": "IT Infrastructure",
+  "level": "Senior",
+  "requiredSkills": ["SQL", "PL/SQL", "Oracle RAC", "RMAN", "Performance Tuning", "Linux/Unix"],
+  "categories": [
     {
-      "id": "oracle-dba",
-      "title": "Oracle Database Administrator",
-      "description": "Professional responsible for managing, maintaining, and optimizing Oracle Database systems to ensure high availability, performance, and security",
-      "department": "IT Infrastructure",
-      "level": "Senior",
-      "requiredSkills": ["SQL", "PL/SQL", "Oracle RAC", "RMAN", "Performance Tuning"],
-      "categories": [
-        {
-          "name": "Database Installation & Configuration",
-          "description": "Installation and setup of Oracle Database software and environments",
-          "icon": "🔧",
-          "responsibilities": [
-            "ติดตั้งและกำหนดค่า Oracle Database Software",
-            "สร้างและกำหนดค่า Database Instance",
-            "ติดตั้งและกำหนดค่า Oracle Grid Infrastructure",
-            "กำหนดค่า Oracle Net Services",
-            "ติดตั้งและกำหนดค่า Oracle Clusterware",
-            "กำหนดค่า Memory Management (SGA/PGA)"
-          ]
-        },
-        {
-          "name": "Performance Tuning & Optimization",
-          "description": "Analyze and optimize database performance for optimal system operation",
-          "icon": "📊",
-          "responsibilities": [
-            "วิเคราะห์และปรับปรุง SQL Performance",
-            "ติดตามและวิเคราะห์ AWR Reports",
-            "ปรับปรุง Database Parameters",
-            "จัดการ Table Statistics และ Histograms",
-            "ปรับปรุง Index Design และ Partitioning",
-            "วิเคราะห์และปรับปรุง Wait Events"
-          ]
-        },
-        {
-          "name": "Security Management",
-          "description": "Implement and maintain database security policies and access controls",
-          "icon": "🔒",
-          "responsibilities": [
-            "จัดการ User Accounts และ Privileges",
-            "กำหนดค่า Database Security Policies",
-            "ติดตั้งและจัดการ SSL/TLS Encryption",
-            "กำหนดค่า Database Auditing",
-            "จัดการ Password Policies และ Profiles",
-            "ติดตั้งและจัดการ Oracle Advanced Security"
-          ]
-        },
-        {
-          "name": "Backup & Recovery",
-          "description": "Plan and execute backup strategies and recovery procedures",
-          "icon": "💾",
-          "responsibilities": [
-            "วางแผนและดำเนินการ Backup Strategy",
-            "กำหนดค่าและจัดการ RMAN",
-            "ทำ Point-in-Time Recovery",
-            "จัดการ Archive Log Files",
-            "ทดสอบ Backup และ Recovery Procedures",
-            "กำหนดค่า Flashback Technology"
-          ]
-        },
-        {
-          "name": "Monitoring & Maintenance",
-          "description": "Monitor database health and perform routine maintenance tasks",
-          "icon": "📈",
-          "responsibilities": [
-            "ติดตาม Database Performance แบบ Real-time",
-            "จัดการ Database Jobs และ Scheduler",
-            "ติดตาม Tablespace Usage และ Growth",
-            "ทำ Database Health Checks",
-            "จัดการ Database Links และ Connectivity",
-            "ติดตาม Alert Logs และ Trace Files"
-          ]
-        },
-        {
-          "name": "Troubleshooting & Support",
-          "description": "Diagnose and resolve database issues and provide technical support",
-          "icon": "🔧",
-          "responsibilities": [
-            "แก้ไขปัญหา Database Connectivity",
-            "วิเคราะห์และแก้ไข Database Corruption",
-            "แก้ไขปัญหา Performance Issues",
-            "จัดการ Database Lock และ Deadlock",
-            "แก้ไขปัญหา Replication และ Synchronization",
-            "สนับสนุน Application Development Teams"
-          ]
-        }
-      ],
-      "scorecard": [
-        {
-          "category": "Database Installation & Configuration",
-          "task": "ติดตั้ง Oracle Database Software",
-          "difficulty": 3,
-          "frequency": "รายปี",
-          "note": "Enterprise/Standard Edition"
-        },
-        {
-          "category": "Database Installation & Configuration",
-          "task": "สร้าง Database Instance ใหม่",
-          "difficulty": 4,
-          "frequency": "รายเดือน",
-          "note": "DBCA หรือ Manual Script"
-        },
-        {
-          "category": "Database Installation & Configuration",
-          "task": "กำหนดค่า Instance Parameters",
-          "difficulty": 4,
-          "frequency": "รายสัปดาห์",
-          "note": "Memory, I/O, Network"
-        },
-        {
-          "category": "Database Installation & Configuration",
-          "task": "ติดตั้ง Oracle Grid Infrastructure",
-          "difficulty": 5,
-          "frequency": "รายปี",
-          "note": "RAC Environment"
-        },
-        {
-          "category": "Database Installation & Configuration",
-          "task": "กำหนดค่า Oracle Net Services",
-          "difficulty": 3,
-          "frequency": "รายเดือน",
-          "note": "Listener, TNS"
-        },
-        {
-          "category": "Performance Tuning & Optimization",
-          "task": "วิเคราะห์ AWR Reports",
-          "difficulty": 4,
-          "frequency": "รายวัน",
-          "note": "Automatic Workload Repository"
-        },
-        {
-          "category": "Performance Tuning & Optimization",
-          "task": "ปรับปรุง SQL Statement Performance",
-          "difficulty": 5,
-          "frequency": "รายวัน",
-          "note": "Query Optimization"
-        },
-        {
-          "category": "Performance Tuning & Optimization",
-          "task": "วิเคราะห์และแก้ไข Wait Events",
-          "difficulty": 5,
-          "frequency": "รายวัน",
-          "note": "Performance Bottlenecks"
-        },
-        {
-          "category": "Performance Tuning & Optimization",
-          "task": "ปรับปรุง Database Buffer Cache",
-          "difficulty": 4,
-          "frequency": "รายสัปดาห์",
-          "note": "SGA Tuning"
-        },
-        {
-          "category": "Performance Tuning & Optimization",
-          "task": "จัดการ Table และ Index Statistics",
-          "difficulty": 3,
-          "frequency": "รายวัน",
-          "note": "Cost-Based Optimizer"
-        },
-        {
-          "category": "Security Management",
-          "task": "จัดการ Database User Accounts",
-          "difficulty": 2,
-          "frequency": "รายวัน",
-          "note": "Create, Modify, Drop Users"
-        },
-        {
-          "category": "Security Management",
-          "task": "กำหนด User Roles และ Privileges",
-          "difficulty": 3,
-          "frequency": "รายวัน",
-          "note": "Least Privilege Principle"
-        },
-        {
-          "category": "Security Management",
-          "task": "กำหนดค่า Database Auditing",
-          "difficulty": 4,
-          "frequency": "รายสัปดาห์",
-          "note": "Fine Grained Auditing"
-        },
-        {
-          "category": "Security Management",
-          "task": "ติดตั้งและจัดการ SSL/TLS",
-          "difficulty": 4,
-          "frequency": "รายเดือน",
-          "note": "Network Encryption"
-        },
-        {
-          "category": "Security Management",
-          "task": "จัดการ Password Policies",
-          "difficulty": 3,
-          "frequency": "รายเดือน",
-          "note": "Profile Management"
-        },
-        {
-          "category": "Backup & Recovery",
-          "task": "ดำเนินการ Database Backup ด้วย RMAN",
-          "difficulty": 3,
-          "frequency": "รายวัน",
-          "note": "Full, Incremental, Archive"
-        },
-        {
-          "category": "Backup & Recovery",
-          "task": "วางแผน Backup Strategy",
-          "difficulty": 4,
-          "frequency": "รายเดือน",
-          "note": "RTO, RPO Requirements"
-        },
-        {
-          "category": "Backup & Recovery",
-          "task": "ทดสอบ Database Recovery",
-          "difficulty": 5,
-          "frequency": "รายเดือน",
-          "note": "Complete, Point-in-Time"
-        },
-        {
-          "category": "Backup & Recovery",
-          "task": "จัดการ Archive Log Files",
-          "difficulty": 3,
-          "frequency": "รายวัน",
-          "note": "Archive Mode Management"
-        },
-        {
-          "category": "Backup & Recovery",
-          "task": "กำหนดค่า Flashback Database",
-          "difficulty": 4,
-          "frequency": "รายเดือน",
-          "note": "Flashback Technology"
-        },
-        {
-          "category": "Monitoring & Maintenance",
-          "task": "ติดตาม Database Alert Logs",
-          "difficulty": 2,
-          "frequency": "รายวัน",
-          "note": "Error Detection"
-        },
-        {
-          "category": "Monitoring & Maintenance",
-          "task": "ติดตาม Database Performance Metrics",
-          "difficulty": 3,
-          "frequency": "รายวัน",
-          "note": "Real-time Monitoring"
-        },
-        {
-          "category": "Monitoring & Maintenance",
-          "task": "จัดการ Tablespace Space Management",
-          "difficulty": 3,
-          "frequency": "รายวัน",
-          "note": "Growth Monitoring"
-        },
-        {
-          "category": "Monitoring & Maintenance",
-          "task": "ทำ Database Health Check",
-          "difficulty": 3,
-          "frequency": "รายวัน",
-          "note": "System Validation"
-        },
-        {
-          "category": "Monitoring & Maintenance",
-          "task": "จัดการ Database Jobs และ Scheduler",
-          "difficulty": 3,
-          "frequency": "รายสัปดาห์",
-          "note": "Automated Tasks"
-        },
-        {
-          "category": "Troubleshooting & Support",
-          "task": "แก้ไขปัญหา Database Connectivity",
-          "difficulty": 3,
-          "frequency": "รายวัน",
-          "note": "Network, Listener Issues"
-        },
-        {
-          "category": "Troubleshooting & Support",
-          "task": "วิเคราะห์และแก้ไข Database Corruption",
-          "difficulty": 5,
-          "frequency": "รายเดือน",
-          "note": "Block Corruption"
-        },
-        {
-          "category": "Troubleshooting & Support",
-          "task": "แก้ไขปัญหา Performance Issues",
-          "difficulty": 5,
-          "frequency": "รายวัน",
-          "note": "Query Tuning"
-        },
-        {
-          "category": "Troubleshooting & Support",
-          "task": "จัดการ Deadlock และ Lock Issues",
-          "difficulty": 4,
-          "frequency": "รายวัน",
-          "note": "Concurrency Problems"
-        },
-        {
-          "category": "Troubleshooting & Support",
-          "task": "สนับสนุน Application Development",
-          "difficulty": 3,
-          "frequency": "รายวัน",
-          "note": "SQL Review, Guidance"
-        }
+      "name": "Database Installation & Configuration",
+      "description": "Installation and setup of Oracle Database software and environments",
+      "icon": "🔧",
+      "responsibilities": [
+        "ติดตั้งและกำหนดค่า Oracle Database Software",
+        "สร้างและกำหนดค่า Database Instance",
+        "ติดตั้งและกำหนดค่า Oracle Grid Infrastructure",
+        "กำหนดค่า Oracle Net Services",
+        "ติดตั้งและกำหนดค่า Oracle Clusterware",
+        "กำหนดค่า Memory Management (SGA/PGA)",
+        "สร้างและจัดการ Pluggable Database (PDB)",
+        "กำหนดค่า ASM Disk Groups",
+        "ติดตั้ง Oracle Patches และ Updates",
+        "สร้างและจัดการ Database Services"
       ]
     },
     {
-      "id": "network-engineer",
-      "title": "Network Engineer",
-      "description": "Design, implement, and maintain network infrastructure to ensure reliable and secure connectivity",
-      "department": "IT Infrastructure",
-      "level": "Mid-Senior",
-      "requiredSkills": ["Cisco", "Routing", "Switching", "Firewall", "VPN"],
-      "categories": [
-        {
-          "name": "Network Design & Planning",
-          "description": "Design and plan network architecture and topology",
-          "icon": "🏗️",
-          "responsibilities": [
-            "ออกแบบ Network Topology และ Architecture",
-            "วางแผน Network Capacity และ Bandwidth",
-            "ออกแบบ VLAN และ Subnet Structure",
-            "วางแผน Network Security Architecture",
-            "ออกแบบ Redundancy และ High Availability",
-            "จัดทำ Network Documentation และ Diagrams"
-          ]
-        },
-        {
-          "name": "Network Implementation",
-          "description": "Configure and deploy network equipment and services",
-          "icon": "⚙️",
-          "responsibilities": [
-            "กำหนดค่า Router และ Switch",
-            "ติดตั้งและกำหนดค่า Firewall",
-            "กำหนดค่า VPN และ Remote Access",
-            "ติดตั้งและกำหนดค่า Wireless Network",
-            "กำหนดค่า Network Protocols (OSPF, BGP, EIGRP)",
-            "ติดตั้งและกำหนดค่า Load Balancer"
-          ]
-        },
-        {
-          "name": "Network Monitoring & Maintenance",
-          "description": "Monitor network performance and maintain network health",
-          "icon": "📊",
-          "responsibilities": [
-            "ติดตาม Network Performance และ Utilization",
-            "จัดการ Network Monitoring Tools",
-            "ทำ Network Health Check",
-            "ติดตาม Network Security Events",
-            "จัดการ Network Backup และ Configuration",
-            "ปรับปรุง Network Performance"
-          ]
-        },
-        {
-          "name": "Network Security",
-          "description": "Implement and maintain network security measures",
-          "icon": "🔒",
-          "responsibilities": [
-            "กำหนดค่า Access Control Lists (ACL)",
-            "จัดการ Network Security Policies",
-            "ติดตั้งและจัดการ IDS/IPS",
-            "กำหนดค่า Network Segmentation",
-            "จัดการ Certificate และ PKI",
-            "ทำ Security Assessment และ Penetration Testing"
-          ]
-        },
-        {
-          "name": "Troubleshooting & Support",
-          "description": "Diagnose and resolve network issues",
-          "icon": "🔧",
-          "responsibilities": [
-            "แก้ไขปัญหา Network Connectivity",
-            "วิเคราะห์ Network Performance Issues",
-            "แก้ไขปัญหา Routing และ Switching",
-            "แก้ไขปัญหา VPN และ Remote Access",
-            "สนับสนุน Network Users",
-            "จัดการ Network Incident Response"
-          ]
-        }
-      ],
-      "scorecard": [
-        {
-          "category": "Network Design & Planning",
-          "task": "ออกแบบ Network Topology",
-          "difficulty": 4,
-          "frequency": "รายเดือน",
-          "note": "Campus/WAN Design"
-        },
-        {
-          "category": "Network Design & Planning",
-          "task": "วางแผน Network Capacity",
-          "difficulty": 4,
-          "frequency": "รายเดือน",
-          "note": "Bandwidth Planning"
-        },
-        {
-          "category": "Network Design & Planning",
-          "task": "ออกแบบ VLAN Structure",
-          "difficulty": 3,
-          "frequency": "รายสัปดาห์",
-          "note": "Layer 2 Segmentation"
-        },
-        {
-          "category": "Network Implementation",
-          "task": "กำหนดค่า Router และ Switch",
-          "difficulty": 3,
-          "frequency": "รายวัน",
-          "note": "Cisco/Juniper Equipment"
-        },
-        {
-          "category": "Network Implementation",
-          "task": "ติดตั้งและกำหนดค่า Firewall",
-          "difficulty": 4,
-          "frequency": "รายสัปดาห์",
-          "note": "Security Policies"
-        },
-        {
-          "category": "Network Implementation",
-          "task": "กำหนดค่า VPN",
-          "difficulty": 4,
-          "frequency": "รายสัปดาห์",
-          "note": "Site-to-Site/Remote Access"
-        },
-        {
-          "category": "Network Monitoring & Maintenance",
-          "task": "ติดตาม Network Performance",
-          "difficulty": 3,
-          "frequency": "รายวัน",
-          "note": "SNMP/Flow Monitoring"
-        },
-        {
-          "category": "Network Monitoring & Maintenance",
-          "task": "จัดการ Monitoring Tools",
-          "difficulty": 3,
-          "frequency": "รายวัน",
-          "note": "SolarWinds/PRTG/Nagios"
-        },
-        {
-          "category": "Network Monitoring & Maintenance",
-          "task": "ทำ Network Health Check",
-          "difficulty": 3,
-          "frequency": "รายสัปดาห์",
-          "note": "Proactive Monitoring"
-        },
-        {
-          "category": "Network Security",
-          "task": "กำหนดค่า Access Control Lists",
-          "difficulty": 3,
-          "frequency": "รายสัปดาห์",
-          "note": "Traffic Filtering"
-        },
-        {
-          "category": "Network Security",
-          "task": "จัดการ Security Policies",
-          "difficulty": 4,
-          "frequency": "รายเดือน",
-          "note": "Policy Management"
-        },
-        {
-          "category": "Network Security",
-          "task": "ติดตั้งและจัดการ IDS/IPS",
-          "difficulty": 4,
-          "frequency": "รายเดือน",
-          "note": "Intrusion Detection"
-        },
-        {
-          "category": "Troubleshooting & Support",
-          "task": "แก้ไขปัญหา Network Connectivity",
-          "difficulty": 3,
-          "frequency": "รายวัน",
-          "note": "Layer 1-3 Issues"
-        },
-        {
-          "category": "Troubleshooting & Support",
-          "task": "วิเคราะห์ Performance Issues",
-          "difficulty": 4,
-          "frequency": "รายวัน",
-          "note": "Packet Analysis"
-        },
-        {
-          "category": "Troubleshooting & Support",
-          "task": "แก้ไขปัญหา Routing",
-          "difficulty": 4,
-          "frequency": "รายสัปดาห์",
-          "note": "Dynamic Routing Protocols"
-        }
+      "name": "Performance Tuning & Optimization",
+      "description": "Analyze and optimize database performance for optimal system operation",
+      "icon": "📊",
+      "responsibilities": [
+        "วิเคราะห์และปรับปรุง SQL Performance",
+        "ติดตามและวิเคราะห์ AWR Reports",
+        "ปรับปรุง Database Parameters",
+        "จัดการ Table Statistics และ Histograms",
+        "ปรับปรุง Index Design และ Partitioning",
+        "วิเคราะห์และปรับปรุง Wait Events",
+        "ปรับปรุง Database Buffer Cache",
+        "จัดการ PGA Memory Management",
+        "วิเคราะห์ SQL Execution Plans",
+        "ปรับปรุง I/O Performance"
       ]
     },
     {
-      "id": "devops-engineer",
-      "title": "DevOps Engineer",
-      "description": "Bridge development and operations teams to improve collaboration and automate deployment processes",
-      "department": "Development",
-      "level": "Senior",
-      "requiredSkills": ["Docker", "Kubernetes", "Jenkins", "AWS", "Terraform"],
-      "categories": [
-        {
-          "name": "CI/CD Pipeline Management",
-          "description": "Design and maintain continuous integration and deployment pipelines",
-          "icon": "🚀",
-          "responsibilities": [
-            "ออกแบบและพัฒนา CI/CD Pipeline",
-            "จัดการ Build และ Deployment Automation",
-            "ติดตั้งและกำหนดค่า Jenkins/GitLab CI",
-            "จัดการ Version Control และ Branching Strategy",
-            "ทำ Automated Testing Integration",
-            "จัดการ Release Management"
-          ]
-        },
-        {
-          "name": "Infrastructure as Code",
-          "description": "Automate infrastructure provisioning and management",
-          "icon": "🏗️",
-          "responsibilities": [
-            "พัฒนา Infrastructure as Code ด้วย Terraform",
-            "จัดการ Cloud Resources (AWS/Azure/GCP)",
-            "ออกแบบและจัดการ Container Infrastructure",
-            "ติดตั้งและจัดการ Kubernetes Clusters",
-            "จัดการ Configuration Management",
-            "ทำ Infrastructure Automation"
-          ]
-        },
-        {
-          "name": "Monitoring & Observability",
-          "description": "Implement monitoring and observability solutions",
-          "icon": "📊",
-          "responsibilities": [
-            "ติดตั้งและกำหนดค่า Monitoring Stack",
-            "จัดการ Log Management และ Analysis",
-            "ทำ Application Performance Monitoring",
-            "สร้าง Dashboard และ Alerting",
-            "จัดการ Metrics Collection",
-            "ทำ Incident Response และ Post-mortem"
-          ]
-        }
-      ],
-      "scorecard": [
-        {
-          "category": "CI/CD Pipeline Management",
-          "task": "ออกแบบ CI/CD Pipeline",
-          "difficulty": 4,
-          "frequency": "รายเดือน",
-          "note": "Jenkins/GitLab CI"
-        },
-        {
-          "category": "CI/CD Pipeline Management",
-          "task": "จัดการ Build Automation",
-          "difficulty": 3,
-          "frequency": "รายวัน",
-          "note": "Automated Builds"
-        },
-        {
-          "category": "CI/CD Pipeline Management",
-          "task": "ทำ Automated Testing",
-          "difficulty": 4,
-          "frequency": "รายวัน",
-          "note": "Unit/Integration Tests"
-        },
-        {
-          "category": "Infrastructure as Code",
-          "task": "พัฒนา Terraform Scripts",
-          "difficulty": 4,
-          "frequency": "รายสัปดาห์",
-          "note": "Infrastructure Automation"
-        },
-        {
-          "category": "Infrastructure as Code",
-          "task": "จัดการ Kubernetes",
-          "difficulty": 5,
-          "frequency": "รายวัน",
-          "note": "Container Orchestration"
-        },
-        {
-          "category": "Infrastructure as Code",
-          "task": "จัดการ Cloud Resources",
-          "difficulty": 4,
-          "frequency": "รายวัน",
-          "note": "AWS/Azure/GCP"
-        },
-        {
-          "category": "Monitoring & Observability",
-          "task": "ติดตั้ง Monitoring Stack",
-          "difficulty": 4,
-          "frequency": "รายเดือน",
-          "note": "Prometheus/Grafana"
-        },
-        {
-          "category": "Monitoring & Observability",
-          "task": "จัดการ Log Management",
-          "difficulty": 3,
-          "frequency": "รายวัน",
-          "note": "ELK Stack"
-        },
-        {
-          "category": "Monitoring & Observability",
-          "task": "สร้าง Dashboard",
-          "difficulty": 3,
-          "frequency": "รายสัปดาห์",
-          "note": "Visualization"
-        }
+      "name": "Security Management",
+      "description": "Implement and maintain database security policies and access controls",
+      "icon": "🔒",
+      "responsibilities": [
+        "จัดการ User Accounts และ Privileges",
+        "กำหนดค่า Database Security Policies",
+        "ติดตั้งและจัดการ SSL/TLS Encryption",
+        "กำหนดค่า Database Auditing",
+        "จัดการ Password Policies และ Profiles",
+        "ติดตั้งและจัดการ Oracle Advanced Security",
+        "กำหนดค่า Transparent Data Encryption (TDE)",
+        "จัดการ Database Vault",
+        "จัดการ VPD (Virtual Private Database)",
+        "ตรวจสอบ Security Vulnerabilities"
       ]
+    },
+    {
+      "name": "Backup & Recovery",
+      "description": "Plan and execute backup strategies and recovery procedures",
+      "icon": "💾",
+      "responsibilities": [
+        "วางแผนและดำเนินการ Backup Strategy",
+        "กำหนดค่าและจัดการ RMAN",
+        "ทำ Point-in-Time Recovery",
+        "จัดการ Archive Log Files",
+        "ทดสอบ Backup และ Recovery Procedures",
+        "กำหนดค่า Flashback Technology",
+        "ทำ Table และ Tablespace Recovery",
+        "จัดการ RMAN Catalog",
+        "ตรวจสอบ Backup Integrity",
+        "ทำ Database Clone และ Refresh"
+      ]
+    },
+    {
+      "name": "Monitoring & Maintenance",
+      "description": "Monitor database health and perform routine maintenance tasks",
+      "icon": "📈",
+      "responsibilities": [
+        "ติดตาม Database Performance แบบ Real-time",
+        "จัดการ Database Jobs และ Scheduler",
+        "ติดตาม Tablespace Usage และ Growth",
+        "ทำ Database Health Checks",
+        "จัดการ Database Links และ Connectivity",
+        "ติดตาม Alert Logs และ Trace Files",
+        "วิเคราะห์ Database Growth Trends",
+        "ติดตาม Lock และ Blocking Sessions",
+        "ทำ Database Maintenance Tasks",
+        "ติดตาม RAC Cluster Health"
+      ]
+    },
+    {
+      "name": "High Availability & Disaster Recovery",
+      "description": "Implement high availability solutions and disaster recovery planning",
+      "icon": "🏥",
+      "responsibilities": [
+        "กำหนดค่า Oracle Data Guard",
+        "จัดการ Standby Database Synchronization",
+        "ทดสอบ Failover และ Switchover",
+        "กำหนดค่า Oracle RAC",
+        "จัดการ ASM และ Storage Replication",
+        "วางแผน Disaster Recovery",
+        "ติดตาม Replication Lag",
+        "จัดการ Oracle GoldenGate",
+        "ทำ Rolling Upgrades"
+      ]
+    },
+    {
+      "name": "Troubleshooting & Support",
+      "description": "Diagnose and resolve database issues and provide technical support",
+      "icon": "🔧",
+      "responsibilities": [
+        "แก้ไขปัญหา Database Connectivity",
+        "วิเคราะห์และแก้ไข Database Corruption",
+        "แก้ไขปัญหา Performance Issues",
+        "จัดการ Database Lock และ Deadlock",
+        "แก้ไขปัญหา Replication และ Synchronization",
+        "สนับสนุน Application Development Teams",
+        "แก้ไขปัญหา Memory Issues",
+        "วิเคราะห์ Trace Files และ Dumps",
+        "แก้ไขปัญหา Space Management",
+        "จัดการ Database Incident Response"
+      ]
+    },
+    {
+      "name": "Automation & Cloud",
+      "description": "Implement automation and cloud-based database solutions",
+      "icon": "☁️",
+      "responsibilities": [
+        "เขียน SQL Scripts สำหรับ Maintenance",
+        "สร้าง Automated Monitoring Scripts",
+        "พัฒนา Database Deployment Scripts",
+        "จัดการ Oracle Cloud Infrastructure",
+        "กำหนดค่า Oracle Autonomous Database",
+        "จัดการ Database Migration to Cloud",
+        "ติดตั้งและจัดการ Oracle Machine Learning",
+        "กำหนดค่า In-Memory Column Store"
+      ]
+    }
+  ],
+  "scorecard": [
+    {
+      "category": "Database Installation & Configuration",
+      "task": "ติดตั้ง Oracle Database Software",
+      "difficulty": 3,
+      "frequency": "รายปี",
+      "note": "Enterprise/Standard Edition"
+    },
+    {
+      "category": "Database Installation & Configuration",
+      "task": "สร้าง Database Instance ใหม่",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "DBCA หรือ Manual Script"
+    },
+    {
+      "category": "Database Installation & Configuration",
+      "task": "กำหนดค่า Instance Parameters",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "Memory, I/O, Network"
+    },
+    {
+      "category": "Database Installation & Configuration",
+      "task": "ติดตั้ง Oracle Grid Infrastructure",
+      "difficulty": 5,
+      "frequency": "รายปี",
+      "note": "RAC Environment"
+    },
+    {
+      "category": "Database Installation & Configuration",
+      "task": "กำหนดค่า Oracle Net Services",
+      "difficulty": 3,
+      "frequency": "รายเดือน",
+      "note": "Listener, TNS"
+    },
+    {
+      "category": "Database Installation & Configuration",
+      "task": "สร้างและจัดการ Pluggable Database (PDB)",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Multitenant Architecture"
+    },
+    {
+      "category": "Database Installation & Configuration",
+      "task": "กำหนดค่า ASM Disk Groups",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Storage Management"
+    },
+    {
+      "category": "Database Installation & Configuration",
+      "task": "ติดตั้ง Oracle Patches และ Updates",
+      "difficulty": 3,
+      "frequency": "รายเดือน",
+      "note": "PSU, CPU, Bundle Patches"
+    },
+    {
+      "category": "Performance Tuning & Optimization",
+      "task": "วิเคราะห์ AWR Reports",
+      "difficulty": 4,
+      "frequency": "รายวัน",
+      "note": "Automatic Workload Repository"
+    },
+    {
+      "category": "Performance Tuning & Optimization",
+      "task": "ปรับปรุง SQL Statement Performance",
+      "difficulty": 5,
+      "frequency": "รายวัน",
+      "note": "Query Optimization"
+    },
+    {
+      "category": "Performance Tuning & Optimization",
+      "task": "วิเคราะห์และแก้ไข Wait Events",
+      "difficulty": 5,
+      "frequency": "รายวัน",
+      "note": "Performance Bottlenecks"
+    },
+    {
+      "category": "Performance Tuning & Optimization",
+      "task": "ปรับปรุง Database Buffer Cache",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "SGA Tuning"
+    },
+    {
+      "category": "Performance Tuning & Optimization",
+      "task": "จัดการ Table และ Index Statistics",
+      "difficulty": 3,
+      "frequency": "รายวัน",
+      "note": "Cost-Based Optimizer"
+    },
+    {
+      "category": "Performance Tuning & Optimization",
+      "task": "ปรับปรุง PGA Memory Management",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "Sort, Hash Operations"
+    },
+    {
+      "category": "Performance Tuning & Optimization",
+      "task": "วิเคราะห์ SQL Execution Plans",
+      "difficulty": 4,
+      "frequency": "รายวัน",
+      "note": "Optimizer Analysis"
+    },
+    {
+      "category": "Performance Tuning & Optimization",
+      "task": "ปรับปรุง I/O Performance",
+      "difficulty": 5,
+      "frequency": "รายสัปดาห์",
+      "note": "Storage Optimization"
+    },
+    {
+      "category": "Security Management",
+      "task": "จัดการ Database User Accounts",
+      "difficulty": 2,
+      "frequency": "รายวัน",
+      "note": "Create, Modify, Drop Users"
+    },
+    {
+      "category": "Security Management",
+      "task": "กำหนด User Roles และ Privileges",
+      "difficulty": 3,
+      "frequency": "รายวัน",
+      "note": "Least Privilege Principle"
+    },
+    {
+      "category": "Security Management",
+      "task": "กำหนดค่า Database Auditing",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "Fine Grained Auditing"
+    },
+    {
+      "category": "Security Management",
+      "task": "ติดตั้งและจัดการ SSL/TLS",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Network Encryption"
+    },
+    {
+      "category": "Security Management",
+      "task": "จัดการ Password Policies",
+      "difficulty": 3,
+      "frequency": "รายเดือน",
+      "note": "Profile Management"
+    },
+    {
+      "category": "Security Management",
+      "task": "กำหนดค่า Transparent Data Encryption (TDE)",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Data-at-Rest Encryption"
+    },
+    {
+      "category": "Security Management",
+      "task": "จัดการ Database Vault",
+      "difficulty": 5,
+      "frequency": "รายเดือน",
+      "note": "Separation of Duties"
+    },
+    {
+      "category": "Security Management",
+      "task": "จัดการ VPD (Virtual Private Database)",
+      "difficulty": 5,
+      "frequency": "รายเดือน",
+      "note": "Row-Level Security"
+    },
+    {
+      "category": "Backup & Recovery",
+      "task": "ดำเนินการ Database Backup ด้วย RMAN",
+      "difficulty": 3,
+      "frequency": "รายวัน",
+      "note": "Full, Incremental, Archive"
+    },
+    {
+      "category": "Backup & Recovery",
+      "task": "วางแผน Backup Strategy",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "RTO, RPO Requirements"
+    },
+    {
+      "category": "Backup & Recovery",
+      "task": "ทดสอบ Database Recovery",
+      "difficulty": 5,
+      "frequency": "รายเดือน",
+      "note": "Complete, Point-in-Time"
+    },
+    {
+      "category": "Backup & Recovery",
+      "task": "จัดการ Archive Log Files",
+      "difficulty": 3,
+      "frequency": "รายวัน",
+      "note": "Archive Mode Management"
+    },
+    {
+      "category": "Backup & Recovery",
+      "task": "กำหนดค่า Flashback Database",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Flashback Technology"
+    },
+    {
+      "category": "Backup & Recovery",
+      "task": "ทำ Table และ Tablespace Recovery",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "Granular Recovery"
+    },
+    {
+      "category": "Backup & Recovery",
+      "task": "จัดการ RMAN Catalog",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "Metadata Repository"
+    },
+    {
+      "category": "Monitoring & Maintenance",
+      "task": "ติดตาม Database Alert Logs",
+      "difficulty": 2,
+      "frequency": "รายวัน",
+      "note": "Error Detection"
+    },
+    {
+      "category": "Monitoring & Maintenance",
+      "task": "ติดตาม Database Performance Metrics",
+      "difficulty": 3,
+      "frequency": "รายวัน",
+      "note": "Real-time Monitoring"
+    },
+    {
+      "category": "Monitoring & Maintenance",
+      "task": "จัดการ Tablespace Space Management",
+      "difficulty": 3,
+      "frequency": "รายวัน",
+      "note": "Growth Monitoring"
+    },
+    {
+      "category": "Monitoring & Maintenance",
+      "task": "ทำ Database Health Check",
+      "difficulty": 3,
+      "frequency": "รายวัน",
+      "note": "System Validation"
+    },
+    {
+      "category": "Monitoring & Maintenance",
+      "task": "จัดการ Database Jobs และ Scheduler",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "Automated Tasks"
+    },
+    {
+      "category": "High Availability & Disaster Recovery",
+      "task": "กำหนดค่า Oracle Data Guard",
+      "difficulty": 5,
+      "frequency": "รายเดือน",
+      "note": "Primary-Standby Setup"
+    },
+    {
+      "category": "High Availability & Disaster Recovery",
+      "task": "จัดการ Standby Database Synchronization",
+      "difficulty": 4,
+      "frequency": "รายวัน",
+      "note": "Log Shipping"
+    },
+    {
+      "category": "High Availability & Disaster Recovery",
+      "task": "ทดสอบ Failover และ Switchover",
+      "difficulty": 5,
+      "frequency": "รายเดือน",
+      "note": "DR Testing"
+    },
+    {
+      "category": "High Availability & Disaster Recovery",
+      "task": "กำหนดค่า Oracle RAC",
+      "difficulty": 5,
+      "frequency": "รายปี",
+      "note": "Cluster Database"
+    },
+    {
+      "category": "High Availability & Disaster Recovery",
+      "task": "จัดการ ASM และ Storage Replication",
+      "difficulty": 4,
+      "frequency": "รายสัปดาห์",
+      "note": "Storage Management"
+    },
+    {
+      "category": "Troubleshooting & Support",
+      "task": "แก้ไขปัญหา Database Connectivity",
+      "difficulty": 3,
+      "frequency": "รายวัน",
+      "note": "Network, Listener Issues"
+    },
+    {
+      "category": "Troubleshooting & Support",
+      "task": "วิเคราะห์และแก้ไข Database Corruption",
+      "difficulty": 5,
+      "frequency": "รายเดือน",
+      "note": "Block Corruption"
+    },
+    {
+      "category": "Troubleshooting & Support",
+      "task": "แก้ไขปัญหา Performance Issues",
+      "difficulty": 5,
+      "frequency": "รายวัน",
+      "note": "Query Tuning"
+    },
+    {
+      "category": "Troubleshooting & Support",
+      "task": "จัดการ Deadlock และ Lock Issues",
+      "difficulty": 4,
+      "frequency": "รายวัน",
+      "note": "Concurrency Problems"
+    },
+    {
+      "category": "Troubleshooting & Support",
+      "task": "สนับสนุน Application Development",
+      "difficulty": 3,
+      "frequency": "รายวัน",
+      "note": "SQL Review, Guidance"
+    },
+    {
+      "category": "Automation & Cloud",
+      "task": "เขียน SQL Scripts สำหรับ Maintenance",
+      "difficulty": 3,
+      "frequency": "รายสัปดาห์",
+      "note": "PL/SQL, Shell Scripts"
+    },
+    {
+      "category": "Automation & Cloud",
+      "task": "สร้าง Automated Monitoring Scripts",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Alert Automation"
+    },
+    {
+      "category": "Automation & Cloud",
+      "task": "จัดการ Oracle Cloud Infrastructure",
+      "difficulty": 5,
+      "frequency": "รายสัปดาห์",
+      "note": "OCI Database Services"
+    },
+    {
+      "category": "Automation & Cloud",
+      "task": "กำหนดค่า Oracle Autonomous Database",
+      "difficulty": 4,
+      "frequency": "รายเดือน",
+      "note": "Self-Managing Database"
+    },
+    {
+      "category": "Automation & Cloud",
+      "task": "จัดการ Database Migration to Cloud",
+      "difficulty": 5,
+      "frequency": "รายปี",
+      "note": "Cloud Migration"
     }
   ]
 }
