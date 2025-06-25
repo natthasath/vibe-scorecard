@@ -1,3 +1,3 @@
 # Vibe Score Card
 
-A scorecard is a performance measurement tool that tracks key metrics, goals, or KPIs to evaluate progress, success, or compliance across projects, teams, or organizations. It provides a quick, visual summary to support data-driven decision-making.
+Vibe Score Card is a performance tracking tool that helps teams set goals, measure progress, and visualize achievements. It offers clear dashboards and insights to drive productivity, align objectives, and support continuous improvement across organizations.
